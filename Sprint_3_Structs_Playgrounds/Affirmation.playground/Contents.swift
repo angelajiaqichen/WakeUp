@@ -12,9 +12,9 @@ class AffirmationDeck {
   
   init() {
     let affirmationData = [
-      "Go for a 15-minute walk",
-      "Buy yourself flowers",
-      "Call a friend"
+      "I am worthy",
+      "I create my own hapiness",
+      "My life is filled with abundance of goodness"
     ]
     
 
@@ -26,10 +26,10 @@ class AffirmationDeck {
     
   }
   
-  func drawFiveRandomAffirmations() -> Affirmation {
+  func drawFiveRandomAffirmations() -> [Affirmation] {
     var fiveAffirmations = [Affirmation]()
-    for i in 1...5 {
-      affirm = affirmations[Int(arc4random_uniform(UInt32(affirmations.count)))]
+    for _ in 1...5 {
+      var affirm = affirmations[Int(arc4random_uniform(UInt32(affirmations.count)))]
       fiveAffirmations.append(affirm)
     }
     return fiveAffirmations
