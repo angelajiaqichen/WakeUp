@@ -25,9 +25,9 @@ class UserRepository: ObservableObject {
   
   init() {
     get()
-    set()
+    //set()
   }
-    
+    /*
     func set(){
         
         db.collection("user-profiles").document("testUser").setData([
@@ -43,6 +43,7 @@ class UserRepository: ObservableObject {
             }
         }
     }
+  */
 
     func get() {
         
