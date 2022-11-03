@@ -46,30 +46,30 @@ class UserRepository: ObservableObject {
 
     func get() {
         
-      print("hello world")
-      // Complete this function
-      db.collection("user-profiles")
-        .addSnapshotListener { querySnapshot, error in
-          if let error = error {
-              print("Error getting documents: \(error)")
-            return
-          }
-
-            for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-            }
-            
-            self.users = querySnapshot?.documents.compactMap { document in
-              try? document.data(as: User.self)
-            } ?? []
+    print("hello world")
+    // Complete this function
+    db.collection("user-profiles")
+      .addSnapshotListener { querySnapshot, error in
+        if let error = error {
+            print("Error getting documents: \(error)")
+          return
         }
 
-      //debugging
-      for usr in self.users {
-         print(String(usr.UUID)) // check to see if data was loaded
-       }
-      
-      print("hello world 2")
+          for document in querySnapshot!.documents {
+                      print("\(document.documentID) => \(document.data())")
+          }
+          
+          self.users = querySnapshot?.documents.compactMap { document in
+            try? document.data(as: User.self)
+          } ?? []
+      }
+
+    //debugging
+    for usr in self.users {
+       print(String(usr.UUID)) // check to see if data was loaded
+     }
+    
+    print("hello world 2")
 
 
     }

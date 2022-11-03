@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		162BA5FF290B6C5E005A62FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 162BA5FE290B6C5E005A62FE /* GoogleService-Info.plist */; };
-		162BA602290B6D13005A62FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 162BA601290B6D13005A62FE /* Alamofire */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
 		E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEA8290B3599002EF995 /* Assets.xcassets */; };
 		E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */; };
 		E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB3290B36E9002EF995 /* FirebaseFirestore */; };
 		E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */; };
+		E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		162BA5FE290B6C5E005A62FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoApp.swift; sourceTree = "<group>"; };
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E30ADEA8290B3599002EF995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162BA602290B6D13005A62FE /* Alamofire in Frameworks */,
 				E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */,
 				E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -65,7 +63,7 @@
 			children = (
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
 				E30ADEBB290B4174002EF995 /* Models */,
-				162BA5FE290B6C5E005A62FE /* GoogleService-Info.plist */,
+				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
@@ -117,7 +115,6 @@
 			packageProductDependencies = (
 				E30ADEB3290B36E9002EF995 /* FirebaseFirestore */,
 				E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */,
-				162BA601290B6D13005A62FE /* Alamofire */,
 			);
 			productName = WakeUpFirebaseDemo;
 			productReference = E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */;
@@ -149,7 +146,6 @@
 			mainGroup = E30ADE98290B3596002EF995;
 			packageReferences = (
 				E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				162BA600290B6D13005A62FE /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = E30ADEA2290B3596002EF995 /* Products */;
 			projectDirPath = "";
@@ -166,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
-				162BA5FF290B6C5E005A62FE /* GoogleService-Info.plist in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
+				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,14 +384,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		162BA600290B6D13005A62FE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -407,11 +395,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		162BA601290B6D13005A62FE /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 162BA600290B6D13005A62FE /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		E30ADEB3290B36E9002EF995 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

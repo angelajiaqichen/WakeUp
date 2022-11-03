@@ -20,9 +20,9 @@ struct ContentView: View {
         }
         .padding()
         
-        //NavigationView {
+        NavigationView {
             //Text(userProfiles[0].UUID)
-        //}
+        }
     }
 }
 
