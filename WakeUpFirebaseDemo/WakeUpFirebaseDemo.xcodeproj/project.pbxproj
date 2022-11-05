@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162A29B3291714610064BAC0 /* GoogleService-Info in Resources */ = {isa = PBXBuildFile; fileRef = 162A29B2291714610064BAC0 /* GoogleService-Info */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
 		E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEA8290B3599002EF995 /* Assets.xcassets */; };
 		E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */; };
 		E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB3290B36E9002EF995 /* FirebaseFirestore */; };
 		E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */; };
-		E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162A29B12917141A0064BAC0 /* Affirmation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Affirmation.playground; path = ../../../Sprint_3_Structs_Playgrounds/Affirmation.playground; sourceTree = "<group>"; };
+		162A29B2291714610064BAC0 /* GoogleService-Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "GoogleService-Info"; path = "../../GoogleService-Info"; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoApp.swift; sourceTree = "<group>"; };
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E30ADEA8290B3599002EF995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +64,7 @@
 			children = (
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
 				E30ADEBB290B4174002EF995 /* Models */,
-				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
+				162A29B2291714610064BAC0 /* GoogleService-Info */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
@@ -83,6 +84,7 @@
 		E30ADEBB290B4174002EF995 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				162A29B12917141A0064BAC0 /* Affirmation.playground */,
 				E30ADEB9290B38A8002EF995 /* User.swift */,
 			);
 			path = Models;
@@ -162,8 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
+				162A29B3291714610064BAC0 /* GoogleService-Info in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
-				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
