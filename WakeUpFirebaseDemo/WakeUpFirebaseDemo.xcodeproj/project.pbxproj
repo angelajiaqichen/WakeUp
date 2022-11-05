@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		162A29B3291714610064BAC0 /* GoogleService-Info in Resources */ = {isa = PBXBuildFile; fileRef = 162A29B2291714610064BAC0 /* GoogleService-Info */; };
+		162A29B5291715070064BAC0 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B4291715070064BAC0 /* Affirmation.swift */; };
+		162A29B7291715460064BAC0 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B6291715460064BAC0 /* Events.swift */; };
+		162A29B92917158C0064BAC0 /* Intentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B82917158C0064BAC0 /* Intentions.swift */; };
+		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
+		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
+		162A29C12917166E0064BAC0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C02917166E0064BAC0 /* Tasks.swift */; };
+		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
 		E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEA8290B3599002EF995 /* Assets.xcassets */; };
@@ -19,8 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		162A29B12917141A0064BAC0 /* Affirmation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Affirmation.playground; path = ../../../Sprint_3_Structs_Playgrounds/Affirmation.playground; sourceTree = "<group>"; };
 		162A29B2291714610064BAC0 /* GoogleService-Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "GoogleService-Info"; path = "../../GoogleService-Info"; sourceTree = "<group>"; };
+		162A29B4291715070064BAC0 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		162A29B6291715460064BAC0 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		162A29B82917158C0064BAC0 /* Intentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intentions.swift; sourceTree = "<group>"; };
+		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoApp.swift; sourceTree = "<group>"; };
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,8 +97,14 @@
 		E30ADEBB290B4174002EF995 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				162A29B12917141A0064BAC0 /* Affirmation.playground */,
 				E30ADEB9290B38A8002EF995 /* User.swift */,
+				162A29B4291715070064BAC0 /* Affirmation.swift */,
+				162A29BA291715DC0064BAC0 /* Quote.swift */,
+				162A29BE2917162C0064BAC0 /* Suggestion.swift */,
+				162A29C02917166E0064BAC0 /* Tasks.swift */,
+				162A29B6291715460064BAC0 /* Events.swift */,
+				162A29B82917158C0064BAC0 /* Intentions.swift */,
+				162A29C2291716AA0064BAC0 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,9 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
+				162A29B7291715460064BAC0 /* Events.swift in Sources */,
+				162A29B5291715070064BAC0 /* Affirmation.swift in Sources */,
+				162A29C3291716AA0064BAC0 /* Weather.swift in Sources */,
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
+				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
+				162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
+				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
