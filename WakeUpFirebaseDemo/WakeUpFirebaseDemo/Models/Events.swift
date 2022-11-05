@@ -20,3 +20,4 @@ struct EventItem {
 struct Events {
   let items: [EventItem]
 }
+

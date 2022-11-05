@@ -12,9 +12,9 @@
 
 
 import Foundation
-import PlaygroundSupport
+//import PlaygroundSupport
 //import CoreLocation
-PlaygroundPage.current.needsIndefiniteExecution = true
+//PlaygroundPage.current.needsIndefiniteExecution = true
 
 
 let url = "http://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
@@ -83,7 +83,7 @@ let task = URLSession.shared.dataTask(with: URL(string: url)!) { (data, response
 
 }
 
-task.resume()
+//task.resume()
 
 
 
