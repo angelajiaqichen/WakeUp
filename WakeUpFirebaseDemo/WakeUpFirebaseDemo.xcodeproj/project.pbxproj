@@ -16,6 +16,8 @@
 		E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
+		E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */; };
+		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 		E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D31256291821720002F20C /* DeepBreath-Background.jpg */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ConquerTheDay-background.jpg"; path = "../../../../ConquerTheDay-background.jpg"; sourceTree = "<group>"; };
+		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 		E3D31256291821720002F20C /* DeepBreath-Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeepBreath-Background.jpg"; path = "../../../../DeepBreath-Background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +53,7 @@
 		E30ADE98290B3596002EF995 = {
 			isa = PBXGroup;
 			children = (
+				E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */,
 				E3D31256291821720002F20C /* DeepBreath-Background.jpg */,
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
 				E30ADEA2290B3596002EF995 /* Products */,
@@ -71,6 +76,7 @@
 				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
+				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
 				E30ADEAA290B3599002EF995 /* Preview Content */,
@@ -170,6 +176,7 @@
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
 				E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
+				E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */,
 				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +191,7 @@
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
+				E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
 			);
