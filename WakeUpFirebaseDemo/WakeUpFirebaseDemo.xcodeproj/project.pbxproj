@@ -18,6 +18,7 @@
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
 		E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */; };
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
+		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 		E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D31256291821720002F20C /* DeepBreath-Background.jpg */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ConquerTheDay-background.jpg"; path = "../../../../ConquerTheDay-background.jpg"; sourceTree = "<group>"; };
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
+		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 		E3D31256291821720002F20C /* DeepBreath-Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeepBreath-Background.jpg"; path = "../../../../DeepBreath-Background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
+				E39D7CC1291835C80074BB06 /* Intro.storyboard */,
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
@@ -178,6 +181,7 @@
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
 				E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */,
 				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
+				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
