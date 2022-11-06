@@ -17,7 +17,6 @@ import Foundation
 //PlaygroundPage.current.needsIndefiniteExecution = true
 
 
-let url = "http://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
 
 struct Weather: Decodable {
  let weatherDetails: WeatherDetails
@@ -60,7 +59,7 @@ struct WeatherDetails: Decodable{
 
 
 
-
+let url = "http://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
 
 let task = URLSession.shared.dataTask(with: URL(string: url)!) { (data, response, error) in
  guard let data = data else {
@@ -75,13 +74,15 @@ let task = URLSession.shared.dataTask(with: URL(string: url)!) { (data, response
 }
 
 
+ /*
  // Output if everything is working right
 
  print("Forecast:")
  print("Current Temp: \(JSONDATA.weatherDetails.imperial.value) F")
  print("Current Weather Type: \(JSONDATA.weatherType)")
+  */
 
-}
+}.resume()
 
 //task.resume()
 
