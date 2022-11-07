@@ -10,49 +10,15 @@ import Alamofire
 
 class Parser {
 
-  let urlString = "https://api.github.com/search/repositories?q=language:swift&sort=stars&order=desc"
-  //var urlString: String
-  
-  //init() {
-      //self.urlString = "https://api.github.com/search/repositories?q=language:swift&sort=stars&order=desc"
-    //}
+  let urlString = "http://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
+
   
 
-  func fetchRepositories(completionHandler: @escaping ([Repository]) -> Void) {
-    AF.request(self.urlString).responseDecodable(of: Repositories.self) { (response) in
-      guard let repositories: Repositories = response.value else { return }
-      completionHandler(repositories.items)
+  func fetchRepositories(completionHandler: @escaping (Weather) -> Void) {
+    AF.request(self.urlString).responseDecodable(of: Weather.self) { response in
+      guard let weather: Weather = response.value else { return }
+      completionHandler(weather)
     }
   }
 
 }
-
-/*
-
-typealias JSONDictionary = [String: AnyObject]
-
-class WeatherParser {
-  func parseDictionary(_ data: Data?) -> Result? {
-    if let data = data,
-      let json = try? JSONDecoder().decode(Result.self, from: data) {
-        return json
-      }  else {
-        return nil
-    }
-  }
-    
- 
- 
-  /*
-  func weatherFromSearchResponse(_ data: Data?) -> [Repository]? {
-    guard let result = parseDictionary(data) else {
-      print("Error: couldn't parse result from data")
-      return nil
-    }
-    
-    return result.repos
-  }
-   */
-  
-}
-*/
