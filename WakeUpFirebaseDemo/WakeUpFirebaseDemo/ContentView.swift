@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var userRepository = UserRepository()
     var body: some View {
+      Text("Hello, world! Welcome to WakeUp")
+      //WeatherView(JSONDATA: <#Weather#>)
+      /*
         let userProfiles = userRepository.users
         
         VStack {
@@ -23,6 +26,7 @@ struct ContentView: View {
         NavigationView {
             //Text(userProfiles[0].UUID)
         }
+       */
     }
 }
 
