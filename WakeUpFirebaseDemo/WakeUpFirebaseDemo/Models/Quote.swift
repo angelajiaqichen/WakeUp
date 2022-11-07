@@ -20,9 +20,12 @@ class QuoteDeck {
   
   init() {
     let quoteData = [
-      "quote 1 blabla",
-      "quote 2 blabla",
-      "quote 3 blabla"
+      "Whatever you are, be a good one.",
+      "Be yourself - everyone else is already taken.",
+      "Act as if what you do makes a difference. It does.",
+      "The only real mistake is the one from which we learn nothing.",
+      "Positive anything is better than negative nothing.",
+      "Creativity is intelligence having fun."
     ]
     
 
