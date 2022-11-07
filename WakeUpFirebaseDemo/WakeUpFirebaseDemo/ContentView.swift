@@ -9,29 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    //@State var displayedWeather: Weather
-  
-    //@ObservedObject var viewModel = ViewModel(weather: displayedWeather)
-   
-    var body: some View {
-      Text("Hello, world! Welcome to WakeUp")
-      Text(self.viewModel.weather!.weatherType)
-    }
-  
-  
-  
-  func loadData() {
-    WeatherParser().fetchWeather { weather in
-      self.viewModel.weather = weather
-      //self.displayedWeather = weather
-      
-    }
-  }
-/*
-  func displayWeather() {
-    displayedWeather = viewModel.weather!
     
-  }*/
+    var body: some View {
+      //Text("Hello, world! Welcome to WakeUp")
+      QuoteView()
+     
+    }
+  
+  
+  
 }
 
 /*

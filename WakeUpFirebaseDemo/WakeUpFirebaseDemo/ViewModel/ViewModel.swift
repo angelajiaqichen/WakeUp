@@ -9,19 +9,17 @@ import Foundation
 
 class ViewModel: ObservableObject {
   
-  // instance of parser
-  let parser = WeatherParser()
+  let deck = QuoteDeck()        // create an instance of `Deck`
+  @Published var quote: Quote    // holds a single flashcard object from the deck
   
-  // MARK: Fields
-
-  @Published var weather: Weather? // = what? how do we initialize a custom struct
-  //@Published var displayedWeather: Weather?
-  
-  /*
-  init(weather: Weather) {
-    self.weather = weather
+  init(){
+    self.quote = deck.drawRandomQuote()
   }
-   */
+  
+  func drawDifferentQuote(){ //A method to update the self.flashcard variable to a different random card.
+    self.quote = deck.drawRandomQuote()
+  }
+  
 
 
 }
