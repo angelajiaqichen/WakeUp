@@ -15,10 +15,16 @@ class WeatherParser {
   
 
   func fetchWeather(completionHandler: @escaping (Weather) -> Void) {
+    print("Fetching weather...")
     AF.request(self.urlString).responseDecodable(of: Weather.self) { response in
       guard let weather: Weather = response.value else { return }
       completionHandler(weather)
     }
+    print("Fetched weather...")
+    
+    
   }
 
 }
+
+

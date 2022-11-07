@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    @State var displayedWeather: Weather
+    //@State var displayedWeather: Weather
   
     //@ObservedObject var viewModel = ViewModel(weather: displayedWeather)
    
     var body: some View {
       Text("Hello, world! Welcome to WakeUp")
-      
+      Text(self.viewModel.weather!.weatherType)
     }
   
   
@@ -23,15 +23,15 @@ struct ContentView: View {
   func loadData() {
     WeatherParser().fetchWeather { weather in
       self.viewModel.weather = weather
-      self.displayedWeather = weather
+      //self.displayedWeather = weather
       
     }
   }
-
+/*
   func displayWeather() {
-    displayedWeather = viewModel.weather
+    displayedWeather = viewModel.weather!
     
-  }
+  }*/
 }
 
 /*
