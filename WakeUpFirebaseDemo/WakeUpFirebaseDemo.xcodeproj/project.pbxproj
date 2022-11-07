@@ -29,6 +29,8 @@
 		E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
+		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
+		E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D31256291821720002F20C /* DeepBreath-Background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
+		E3D31256291821720002F20C /* DeepBreath-Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeepBreath-Background.jpg"; path = "../../../../DeepBreath-Background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		E30ADE98290B3596002EF995 = {
 			isa = PBXGroup;
 			children = (
+				E3D31256291821720002F20C /* DeepBreath-Background.jpg */,
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
 				E30ADEA2290B3596002EF995 /* Products */,
 			);
@@ -110,7 +115,7 @@
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
 				E30ADEBB290B4174002EF995 /* Models */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
-				1616A6DE2918415B002283C0 /* GoogleService-Info.plist */,
+				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
 				E30ADEAA290B3599002EF995 /* Preview Content */,
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
+				E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
 				1616A6DF2918415B002283C0 /* GoogleService-Info.plist in Resources */,
 			);
@@ -246,6 +252,7 @@
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
 				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
+				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
