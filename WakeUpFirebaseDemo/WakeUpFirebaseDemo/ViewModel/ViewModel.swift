@@ -14,7 +14,9 @@ class ViewModel: ObservableObject {
   
   // MARK: Fields
 
-  @Published var weather: Weather
+  @Published var weather: Weather // = what? how do we initialize a custom struct
+  @Published var displayedWeather: Weather
+  
   /*
   init(weather: Weather) {
     self.weather = weather
