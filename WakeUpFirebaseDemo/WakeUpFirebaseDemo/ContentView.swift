@@ -14,8 +14,13 @@ struct ContentView: View {
     //@ObservedObject var viewModel = ViewModel(weather: displayedWeather)
    
     var body: some View {
-      Text("Hello, world! Welcome to WakeUp")
-      Text(self.viewModel.weather!.weatherType)
+      VStack{
+        Button("LoadData", action: loadData)
+        Text("Hello, world! Welcome to WakeUp")
+        //Text("\(viewModel.weather!.weatherType)")
+        //Text("\(self.viewModel.weather!.weatherType)")
+        //Text(self.viewModel.weather!)
+      }
     }
   
   
@@ -26,6 +31,7 @@ struct ContentView: View {
       //self.displayedWeather = weather
       
     }
+  
   }
 /*
   func displayWeather() {
