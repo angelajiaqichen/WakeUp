@@ -14,6 +14,8 @@ struct QuoteView: View {
         Text("Quote of the Day:")
         Spacer()
         Text("\(viewModel.quote.text)")
+        Spacer()
+        Spacer()
         
       }
       

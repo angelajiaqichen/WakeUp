@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct AffirmationsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @ObservedObject var viewModel = ViewModel()
+  var body: some View {
+    VStack{
+      Text("Affirmations")
+      Text("Repeat the following sentences")
+      Spacer()
+      
+      
     }
+  }
 }
 
