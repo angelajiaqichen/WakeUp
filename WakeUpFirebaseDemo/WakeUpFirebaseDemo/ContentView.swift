@@ -9,26 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
+    @State var displayedWeather: Weather
   
     var body: some View {
       Text("Hello, world! Welcome to WakeUp")
-      //WeatherView(JSONDATA: <#Weather#>)
-      /*
-        let userProfiles = userRepository.users
-        
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world! Welcome to WakeUp")
-        }
-        .padding()
-        
-        NavigationView {
-            //Text(userProfiles[0].UUID)
-        }
-       */
+      
     }
+  
+  
+  
+  func loadData() {
+    Parser().fetchWeather { weather in
+      self.viewModel.weather = weather
+      
+    }
+  }
+
+  func displayWeather() {
+    displayedWeather = viewModel.weather
+    
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

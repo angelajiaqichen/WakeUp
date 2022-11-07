@@ -5,17 +5,11 @@
 //  Created by Angela Chen on 11/5/22.
 //
 
-// code modified from in-class json decoding exercise
-
 //API KEY: uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ
 //DOCUMENTATION: https://developer.accuweather.com/accuweather-current-conditions-api/apis
 
 
 import Foundation
-//import PlaygroundSupport
-//import CoreLocation
-//PlaygroundPage.current.needsIndefiniteExecution = true
-
 
 
 struct Weather: Codable {

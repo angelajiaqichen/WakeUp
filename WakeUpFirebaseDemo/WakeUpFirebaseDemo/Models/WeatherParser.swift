@@ -14,7 +14,7 @@ class Parser {
 
   
 
-  func fetchRepositories(completionHandler: @escaping (Weather) -> Void) {
+  func fetchWeather(completionHandler: @escaping (Weather) -> Void) {
     AF.request(self.urlString).responseDecodable(of: Weather.self) { response in
       guard let weather: Weather = response.value else { return }
       completionHandler(weather)
