@@ -15,6 +15,11 @@ class ViewModel: ObservableObject {
   // MARK: Fields
 
   @Published var weather: Weather
+  /*
+  init(weather: Weather) {
+    self.weather = weather
+  }
+   */
 
 
 }

@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class Parser {
+class WeatherParser {
 
   let urlString = "http://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
 

@@ -11,6 +11,8 @@ struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
     @State var displayedWeather: Weather
   
+    //@ObservedObject var viewModel = ViewModel(weather: displayedWeather)
+   
     var body: some View {
       Text("Hello, world! Welcome to WakeUp")
       
@@ -19,8 +21,9 @@ struct ContentView: View {
   
   
   func loadData() {
-    Parser().fetchWeather { weather in
+    WeatherParser().fetchWeather { weather in
       self.viewModel.weather = weather
+      self.displayedWeather = weather
       
     }
   }
