@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var userRepository = UserRepository()
+    @ObservedObject var viewModel = ViewModel()
+  
     var body: some View {
       Text("Hello, world! Welcome to WakeUp")
       //WeatherView(JSONDATA: <#Weather#>)
