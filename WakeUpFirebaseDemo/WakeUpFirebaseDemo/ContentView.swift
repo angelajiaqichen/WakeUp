@@ -14,11 +14,11 @@ struct ContentView: View {
    
     var body: some View {
       VStack{
-        Button("LoadData", action: loadData)
         Text("Hello, world! Welcome to WakeUp")
-        //Text("\(viewModel.weather!.weatherType)")
-        Text("\(self.viewModel.weather!.weatherType)")
-        //Text(self.viewModel.weather!)
+        
+        Text("\(self.viewModel.weatherType)")
+        Text("\(self.viewModel.weatherTemp)")
+        
       }.onAppear(perform: loadData)
     }
   
@@ -26,8 +26,12 @@ struct ContentView: View {
   
   func loadData() {
     WeatherParser().fetchWeather { (weather) in
-      self.viewModel.weather = weather
-      //self.displayedWeather = weather
+
+      print(weather)
+      print(weather.weatherDetails.imperial.value)
+      self.viewModel.weatherType = weather.weatherType
+      self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
+
       
     }
   
