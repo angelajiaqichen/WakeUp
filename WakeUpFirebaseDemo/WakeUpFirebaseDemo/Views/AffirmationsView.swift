@@ -9,7 +9,16 @@ import SwiftUI
 
 struct AffirmationsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      @ObservedObject var viewModel = ViewModel()
+      var body: some View {
+        VStack{
+          Text("Quote of the Day:")
+          Spacer()
+          Text("\(viewModel.quote.text)")
+          
+        }
+
+      }
     }
 }
 
