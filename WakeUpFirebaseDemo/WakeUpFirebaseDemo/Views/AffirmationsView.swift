@@ -13,6 +13,7 @@ struct AffirmationsView: View {
     var body: some View {
       VStack{
         Text("Affirmations").font(.largeTitle)
+        Text("Repeat the following sentences:")
         Spacer()
         Text("\(viewModel.affirmations[0].text)")
         Text("\(viewModel.affirmations[1].text)")
