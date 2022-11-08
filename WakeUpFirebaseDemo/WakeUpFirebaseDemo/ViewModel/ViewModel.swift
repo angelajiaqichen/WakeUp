@@ -15,14 +15,6 @@ class ViewModel: ObservableObject {
   // MARK: Fields
 
   @Published var weatherType: String = ""
-  @Published var weatherTemp: Double = 0.0 // = what? how do we initialize a custom struct
-  //@Published var displayedWeather: Weather?
-  // @Published var weather_unwrapped: Weather = Weather()
-  /*
-  init(weather: Weather) {
-    self.weather = weather
-  }
-   */
-
+  @Published var weatherTemp: Double = 0.0 
 
 }

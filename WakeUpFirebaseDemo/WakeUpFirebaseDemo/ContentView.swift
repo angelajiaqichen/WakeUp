@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    //@State var displayedWeather: Weather
   
    
     var body: some View {
       VStack{
-        Text("Hello, world! Welcome to WakeUp")
-        
+        Text("Today's Forecast").font(.largeTitle)
+        Spacer()
+        Text("\(String(format: "%.0f", self.viewModel.weatherTemp))ºF")
         Text("\(self.viewModel.weatherType)")
-        Text("\(self.viewModel.weatherTemp)")
+        Spacer()
+        Spacer()
         
       }.onAppear(perform: loadData)
     }
@@ -31,22 +32,8 @@ struct ContentView: View {
       print(weather.weatherDetails.imperial.value)
       self.viewModel.weatherType = weather.weatherType
       self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
-
       
     }
   
   }
-/*
-  func displayWeather() {
-    displayedWeather = viewModel.weather!
-    
-  }*/
 }
-
-/*
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-*/
