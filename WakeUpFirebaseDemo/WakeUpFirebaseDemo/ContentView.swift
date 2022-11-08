@@ -12,13 +12,8 @@ struct ContentView: View {
     var body: some View {
         let userProfiles = userRepository.users
         
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        IntroView()
+        
         
         NavigationView {
             //Text(userProfiles[0].UUID)

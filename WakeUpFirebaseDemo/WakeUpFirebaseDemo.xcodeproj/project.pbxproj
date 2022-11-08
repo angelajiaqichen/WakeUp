@@ -13,12 +13,13 @@
 		E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */; };
 		E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB3290B36E9002EF995 /* FirebaseFirestore */; };
 		E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */; };
-		E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
 		E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */; };
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
+		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
+		E3C971052919BA94008AB285 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C971042919BA94008AB285 /* GoogleService-Info.plist */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 		E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D31256291821720002F20C /* DeepBreath-Background.jpg */; };
 /* End PBXBuildFile section */
@@ -29,12 +30,13 @@
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E30ADEA8290B3599002EF995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ConquerTheDay-background.jpg"; path = "../../../../ConquerTheDay-background.jpg"; sourceTree = "<group>"; };
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		E3C971042919BA94008AB285 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 		E3D31256291821720002F20C /* DeepBreath-Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeepBreath-Background.jpg"; path = "../../../../DeepBreath-Background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +59,7 @@
 			children = (
 				E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */,
 				E3D31256291821720002F20C /* DeepBreath-Background.jpg */,
+				E3C971042919BA94008AB285 /* GoogleService-Info.plist */,
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
 				E30ADEA2290B3596002EF995 /* Products */,
 			);
@@ -75,10 +78,10 @@
 			children = (
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
 				E30ADEBB290B4174002EF995 /* Models */,
-				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
 				E39D7CC1291835C80074BB06 /* Intro.storyboard */,
+				E3A9300F291AE3EA006E548A /* IntroView.swift */,
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
@@ -180,8 +183,8 @@
 				E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
 				E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */,
-				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
+				E3C971052919BA94008AB285 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
