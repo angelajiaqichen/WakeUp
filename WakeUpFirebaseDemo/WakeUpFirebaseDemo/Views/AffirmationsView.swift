@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct AffirmationsView: View {
-    var body: some View {
-      @ObservedObject var viewModel = ViewModel()
-      var body: some View {
-        VStack{
-          Text("Quote of the Day:")
-          Spacer()
-          Text("\(viewModel.quote.text)")
-          
-        }
 
+    @ObservedObject var viewModel = ViewModel()
+    var body: some View {
+      VStack{
+        Text("Affirmations").font(.largeTitle)
+        Spacer()
+        Text("\(viewModel.affirmations[0].text)")
+        Text("\(viewModel.affirmations[1].text)")
+        Text("\(viewModel.affirmations[2].text)")
+        Text("\(viewModel.affirmations[3].text)")
+        Text("\(viewModel.affirmations[4].text)")
+        
+        Spacer()
+        Spacer()
       }
+
     }
+    
 }
 
