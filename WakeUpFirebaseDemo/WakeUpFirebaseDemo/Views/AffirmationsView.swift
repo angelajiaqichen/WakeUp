@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AffirmationsView: View {
 
+
     @ObservedObject var viewModel = ViewModel()
     var body: some View {
       VStack{
@@ -27,5 +28,6 @@ struct AffirmationsView: View {
 
     }
     
+
 }
 
