@@ -10,19 +10,20 @@ import Alamofire
 
 class WeatherParser {
   
+
   let urlString = "https://dataservice.accuweather.com/currentconditions/v1/2627601?apikey=uazUjXjhg8fUxYsbgyJhLzLfLNnRvMXQ"
-  
-  
-  
+
+
   func fetchWeather(completionHandler: @escaping (Weather) -> Void) {
     
+
     //alamofire fetching weather
     // google how to load data async in view in swift
     print("Fetching weather...")
     AF.request(self.urlString).responseDecodable(of: Weather.self) { response in
       print(response)
       
-      
+
       guard let weather: Weather = response.value else { return }
       completionHandler(weather)
     }
@@ -48,5 +49,4 @@ class WeatherParser {
     
   }
 }
-
 

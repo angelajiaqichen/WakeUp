@@ -9,31 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-  
-   
-    var body: some View {
-      VStack{
-        Text("Today's Forecast").font(.largeTitle)
-        Spacer()
-        Text("\(String(format: "%.0f", self.viewModel.weatherTemp))ºF")
-        Text("\(self.viewModel.weatherType)")
-        Spacer()
-        Spacer()
-        
-      }.onAppear(perform: loadData)
-    }
-  
-  
-  
-  func loadData() {
-    WeatherParser().fetchWeather { (weather) in
 
-      print(weather)
-      print(weather.weatherDetails.imperial.value)
-      self.viewModel.weatherType = weather.weatherType
-      self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
-      
+    private let colors: [Color] = [.red,.blue,.green]
+    @State var offset: CGFloat = 0
+    var body: some View {
+
+        //let userProfiles = userRepository.users
+        
+      //Text("Hello, world! Welcome to WakeUp")
+
+        VStack{
+            TabView {
+                IntroView()
+                QuoteView()
+                DeepBreathView()
+                AffirmationsView()
+                WeatherView()
+
+                    }
+                    .tabViewStyle(PageTabViewStyle())
+        }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        
+
     }
-  
-  }
+
 }
+
+
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(viewModel: ViewModel())
+    }
+}
+
+
