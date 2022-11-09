@@ -7,30 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16099DAD29185343008E01CC /* WeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DAC29185343008E01CC /* WeatherParser.swift */; };
+		16099DB029186573008E01CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 16099DAF29186573008E01CC /* Alamofire */; };
+		16099DB229186998008E01CC /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DB129186998008E01CC /* WeatherView.swift */; };
+		16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DB429186BE4008E01CC /* AffirmationsView.swift */; };
+		16099DB729186C1B008E01CC /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DB629186C1B008E01CC /* QuoteView.swift */; };
+		162A29B5291715070064BAC0 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B4291715070064BAC0 /* Affirmation.swift */; };
+		162A29B7291715460064BAC0 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B6291715460064BAC0 /* Events.swift */; };
+		162A29B92917158C0064BAC0 /* Intentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B82917158C0064BAC0 /* Intentions.swift */; };
+		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
+		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
+		162A29C12917166E0064BAC0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C02917166E0064BAC0 /* Tasks.swift */; };
+		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
+		16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D715BA2919926C0021A8D8 /* ViewModel.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
 		E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEA8290B3599002EF995 /* Assets.xcassets */; };
 		E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */; };
 		E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB3290B36E9002EF995 /* FirebaseFirestore */; };
 		E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */; };
-		E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */; };
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
+		E3999387291C12BE00098183 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3999386291C12BD00098183 /* GoogleService-Info.plist */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
-		E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D31256291821720002F20C /* DeepBreath-Background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16099DAC29185343008E01CC /* WeatherParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherParser.swift; sourceTree = "<group>"; };
+		16099DB129186998008E01CC /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		16099DB429186BE4008E01CC /* AffirmationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsView.swift; sourceTree = "<group>"; };
+		16099DB629186C1B008E01CC /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		162A29B4291715070064BAC0 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		162A29B6291715460064BAC0 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		162A29B82917158C0064BAC0 /* Intentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intentions.swift; sourceTree = "<group>"; };
+		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		16D715BA2919926C0021A8D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoApp.swift; sourceTree = "<group>"; };
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E30ADEA8290B3599002EF995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30ADEAB290B3599002EF995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E3999386291C12BD00098183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
-		E3D31256291821720002F20C /* DeepBreath-Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeepBreath-Background.jpg"; path = "../../../../DeepBreath-Background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16099DB029186573008E01CC /* Alamofire in Frameworks */,
 				E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */,
 				E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -46,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16099DB3291869A2008E01CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16099DB129186998008E01CC /* WeatherView.swift */,
+				16099DB429186BE4008E01CC /* AffirmationsView.swift */,
+				16099DB629186C1B008E01CC /* QuoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16D715B9291992450021A8D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				16D715BA2919926C0021A8D8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E30ADE98290B3596002EF995 = {
 			isa = PBXGroup;
 			children = (
-				E3D31256291821720002F20C /* DeepBreath-Background.jpg */,
+				E3999386291C12BD00098183 /* GoogleService-Info.plist */,
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
 				E30ADEA2290B3596002EF995 /* Products */,
+				E3999385291C121A00098183 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +109,10 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				16D715B9291992450021A8D8 /* ViewModel */,
+				16099DB3291869A2008E01CC /* Views */,
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
 				E30ADEBB290B4174002EF995 /* Models */,
-				E30ADEB7290B3864002EF995 /* GoogleService-Info.plist */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
@@ -89,7 +133,15 @@
 		E30ADEBB290B4174002EF995 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				16099DAC29185343008E01CC /* WeatherParser.swift */,
 				E30ADEB9290B38A8002EF995 /* User.swift */,
+				162A29B4291715070064BAC0 /* Affirmation.swift */,
+				162A29BA291715DC0064BAC0 /* Quote.swift */,
+				162A29BE2917162C0064BAC0 /* Suggestion.swift */,
+				162A29C02917166E0064BAC0 /* Tasks.swift */,
+				162A29B6291715460064BAC0 /* Events.swift */,
+				162A29B82917158C0064BAC0 /* Intentions.swift */,
+				162A29C2291716AA0064BAC0 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +152,13 @@
 				E30ADEBD290B4211002EF995 /* UserRepository.swift */,
 			);
 			path = DataRepository;
+			sourceTree = "<group>";
+		};
+		E3999385291C121A00098183 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +180,7 @@
 			packageProductDependencies = (
 				E30ADEB3290B36E9002EF995 /* FirebaseFirestore */,
 				E30ADEB5290B36E9002EF995 /* FirebaseFirestoreSwift */,
+				16099DAF29186573008E01CC /* Alamofire */,
 			);
 			productName = WakeUpFirebaseDemo;
 			productReference = E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */;
@@ -152,6 +212,7 @@
 			mainGroup = E30ADE98290B3596002EF995;
 			packageReferences = (
 				E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				16099DAE29186573008E01CC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = E30ADEA2290B3596002EF995 /* Products */;
 			projectDirPath = "";
@@ -168,9 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
-				E3D31257291821720002F20C /* DeepBreath-Background.jpg in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
-				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
+				E3999387291C12BE00098183 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,9 +241,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
+				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
+				162A29B7291715460064BAC0 /* Events.swift in Sources */,
+				162A29B5291715070064BAC0 /* Affirmation.swift in Sources */,
+				162A29C3291716AA0064BAC0 /* Weather.swift in Sources */,
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
+				16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */,
+				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
+				16099DB229186998008E01CC /* WeatherView.swift in Sources */,
+				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
+				162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */,
+				16099DAD29185343008E01CC /* WeatherParser.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
+				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
 			);
@@ -333,7 +405,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,7 +436,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -392,6 +464,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		16099DAE29186573008E01CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -403,6 +483,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		16099DAF29186573008E01CC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16099DAE29186573008E01CC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		E30ADEB3290B36E9002EF995 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
