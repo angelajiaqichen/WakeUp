@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    //private let views [QuoteView(),DeepBreathView()]
+
     private let colors: [Color] = [.red,.blue,.green]
     @State var offset: CGFloat = 0
     var body: some View {
@@ -24,20 +24,20 @@ struct ContentView: View {
                 QuoteView()
                 DeepBreathView()
                 AffirmationsView()
-                
-                //WeatherView()
+                WeatherView()
 
                     }
                     .tabViewStyle(PageTabViewStyle())
         }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         
-     
+
     }
-  
-  
-  
+
 }
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -45,4 +45,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(viewModel: ViewModel())
     }
 }
+
 
