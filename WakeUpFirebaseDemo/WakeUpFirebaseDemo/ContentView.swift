@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var offset: CGFloat = 0
     var body: some View {
 
-        let userProfiles = userRepository.users
+        //let userProfiles = userRepository.users
         
       //Text("Hello, world! Welcome to WakeUp")
         VStack{
