@@ -13,12 +13,17 @@ struct ContentView: View {
     private let colors: [Color] = [.red,.blue,.green]
     @State var offset: CGFloat = 0
     var body: some View {
+
+        let userProfiles = userRepository.users
+        
       //Text("Hello, world! Welcome to WakeUp")
         VStack{
             TabView {
+                IntroView()
                 QuoteView()
                 DeepBreathView()
                 AffirmationsView()
+                
                 //WeatherView()
 
                     }

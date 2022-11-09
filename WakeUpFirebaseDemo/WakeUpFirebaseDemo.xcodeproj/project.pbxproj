@@ -32,7 +32,13 @@
 		E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */; };
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 
+		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
+		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
+		E3C971052919BA94008AB285 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C971042919BA94008AB285 /* GoogleService-Info.plist */; };
+
+
 		E3999387291C12BE00098183 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3999386291C12BD00098183 /* GoogleService-Info.plist */; };
+
 
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +67,13 @@
 		E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ConquerTheDay-background.jpg"; path = "../../../../ConquerTheDay-background.jpg"; sourceTree = "<group>"; };
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 
+		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		E3C971042919BA94008AB285 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+
+
 		E3999386291C12BD00098183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+
 
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +116,11 @@
 				E39D7CBD291828090074BB06 /* ConquerTheDay-background.jpg */,
 				E3D31256291821720002F20C /* DeepBreath-Background.jpg */,
 
+				E3C971042919BA94008AB285 /* GoogleService-Info.plist */,
+
+
 				E3999386291C12BD00098183 /* GoogleService-Info.plist */,
+
 
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
 				E30ADEA2290B3596002EF995 /* Products */,
@@ -129,6 +145,8 @@
 				E30ADEBB290B4174002EF995 /* Models */,
 				E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */,
 				E3D3125429181FFD0002F20C /* DeepBreathView.swift */,
+				E39D7CC1291835C80074BB06 /* Intro.storyboard */,
+				E3A9300F291AE3EA006E548A /* IntroView.swift */,
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E30ADEA6290B3596002EF995 /* ContentView.swift */,
 				E30ADEA8290B3599002EF995 /* Assets.xcassets */,
@@ -247,9 +265,14 @@
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
 
 				E39D7CBE291828090074BB06 /* ConquerTheDay-background.jpg in Resources */,
+
+				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
+				E3C971052919BA94008AB285 /* GoogleService-Info.plist in Resources */,
+
 				E30ADEB8290B3866002EF995 /* GoogleService-Info.plist in Resources */,
 
 				E3999387291C12BE00098183 /* GoogleService-Info.plist in Resources */,
+
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
+
 				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
 				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
 				162A29B7291715460064BAC0 /* Events.swift in Sources */,
 				162A29B5291715070064BAC0 /* Affirmation.swift in Sources */,
 				162A29C3291716AA0064BAC0 /* Weather.swift in Sources */,
+
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
 				16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */,
 				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
