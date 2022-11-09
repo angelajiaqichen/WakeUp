@@ -20,11 +20,12 @@ struct ContentView: View {
 
         VStack{
             TabView {
-                IntroView()
+                SplashScreen()
                 QuoteView()
                 DeepBreathView()
                 AffirmationsView()
                 WeatherView()
+                ConquerTheDayView()
 
                     }
                     .tabViewStyle(PageTabViewStyle())
