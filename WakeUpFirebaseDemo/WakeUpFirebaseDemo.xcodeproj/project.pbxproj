@@ -21,6 +21,7 @@
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
 		16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D715BA2919926C0021A8D8 /* ViewModel.swift */; };
 		16E9043D291D88FA00E91CB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16E9043C291D88FA00E91CB4 /* GoogleService-Info.plist */; };
+		16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E90440291D8AD400E91CB4 /* SuggestionView.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
 		E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30ADEA8290B3599002EF995 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		16D715BA2919926C0021A8D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		16E9043C291D88FA00E91CB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16E90440291D8AD400E91CB4 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoApp.swift; sourceTree = "<group>"; };
 		E30ADEA6290B3596002EF995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				16099DB429186BE4008E01CC /* AffirmationsView.swift */,
 				16099DB629186C1B008E01CC /* QuoteView.swift */,
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
+				16E90440291D8AD400E91CB4 /* SuggestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */,
 				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
 				16099DB229186998008E01CC /* WeatherView.swift in Sources */,
+				16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */,
 				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
 				162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */,
 				16099DAD29185343008E01CC /* WeatherParser.swift in Sources */,
