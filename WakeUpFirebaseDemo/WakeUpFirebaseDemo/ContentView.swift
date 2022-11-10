@@ -21,10 +21,10 @@ struct ContentView: View {
         VStack{
             TabView {
                 SplashScreen()
-                QuoteView()
+                WeatherView()
                 DeepBreathView()
                 AffirmationsView()
-                WeatherView()
+                QuoteView()
                 ConquerTheDayView()
 
                     }
