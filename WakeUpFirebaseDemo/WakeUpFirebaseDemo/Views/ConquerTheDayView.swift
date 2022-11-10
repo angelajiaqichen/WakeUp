@@ -12,10 +12,10 @@ struct ConquerTheDayView: View {
       Text("You Are Ready to Conquer the Day!")
       .font(.system(size: 48))
       .padding(50)
-      .background(
-          Image("ConquerTheDay-Background")
-              .resizable()
-      )
+      //.background(
+          //Image("ConquerTheDay-Background")
+              //.resizable()
+      //)
   }
 }
 
