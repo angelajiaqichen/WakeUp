@@ -23,7 +23,7 @@ struct SuggestionView: View {
                               "Avenir",
                               fixedSize: 40))
                 Spacer()
-                Text("\(viewModel.quote.text)").padding()
+                Text("\(viewModel.suggestion.text)").padding()
                       .foregroundColor(.white)
                       .font(.custom(
                               "Avenir",
