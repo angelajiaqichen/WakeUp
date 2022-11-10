@@ -24,6 +24,7 @@ struct ContentView: View {
                 QuoteView()
                 DeepBreathView()
                 AffirmationsView()
+                SuggestionView()
                 WeatherView()
                 ConquerTheDayView()
 
