@@ -15,17 +15,22 @@ struct SplashScreen: View {
         VStack{
             Spacer()
             Text("WakeUp")
-                .font(.largeTitle)
+                .font(.custom(
+                        "Avenir",
+                        fixedSize: 40))
                 .foregroundColor(.white)
             Spacer()
             Text("Swipe to Start Your Day")
                 .foregroundColor(.white)
+                .font(.custom(
+                        "Avenir",
+                        fixedSize: 20))
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(LinearGradient(colors: colors,
                                     startPoint: .top,
-                                    endPoint: .center))
+                                    endPoint: .bottom))
         
     }
 }
