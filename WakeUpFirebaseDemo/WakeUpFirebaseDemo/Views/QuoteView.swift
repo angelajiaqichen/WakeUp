@@ -18,6 +18,7 @@ struct QuoteView: View {
         
             
               VStack{
+                  Spacer()
                 Text("Quote of the Day:").padding()
                       .foregroundColor(.white)
                       .font(.custom(

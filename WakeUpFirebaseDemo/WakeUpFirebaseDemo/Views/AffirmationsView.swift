@@ -18,7 +18,7 @@ struct AffirmationsView: View {
         Color(red: 0.64313, green: 0.65490, blue: 1.0)]
     var body: some View {
       VStack{
-          
+        Spacer()
         Text("Affirmations")
               .foregroundColor(.white)
               .font(.custom(
