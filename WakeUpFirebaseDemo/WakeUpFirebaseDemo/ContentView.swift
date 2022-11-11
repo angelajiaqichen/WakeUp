@@ -21,17 +21,19 @@ struct ContentView: View {
         VStack{
             TabView {
                 SplashScreen()
-                QuoteView()
+                WeatherView()
                 DeepBreathView()
                 AffirmationsView()
                 SuggestionView()
-                WeatherView()
+                QuoteView()
                 ConquerTheDayView()
 
                     }
                     .tabViewStyle(PageTabViewStyle())
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .ignoresSafeArea()
         }
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                
         
 
     }

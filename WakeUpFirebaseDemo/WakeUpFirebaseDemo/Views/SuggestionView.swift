@@ -10,37 +10,39 @@ import SwiftUI
 struct SuggestionView: View {
     @ObservedObject var viewModel = ViewModel()
     let colors = [
-        Color(red: 1.0, green: 0.8549, blue: 0.4784),
-        Color(red: 1.0, green: 0.717647, blue: 0.7333)]
+        Color(red: 0.69411, green: 0.70196, blue: 0.9333),
+        Color(red: 0.9922, green: 0.9725, blue: 0.5333)]
     
     var body: some View {
         
             
               VStack{
+                Spacer()
                 Text("Today, We Suggest That You").padding()
                       .foregroundColor(.white)
                       .font(.custom(
                               "Avenir",
                               fixedSize: 40))
+                      .multilineTextAlignment(.center)
                 Spacer()
                 Text("\(viewModel.suggestion.text)").padding()
                       .foregroundColor(.white)
                       .font(.custom(
                               "Avenir",
-                              fixedSize: 50))
+                              fixedSize: 30))
                       .multilineTextAlignment(.center)
-                Spacer()
-                Spacer()
-              }
+                  Spacer()
+                  Spacer()
+                  
+                  }
         
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(LinearGradient(colors: colors,
-                                    startPoint: .top,
-                                    endPoint: .center))
-    
-      
-      
-      
+        
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(LinearGradient(colors: colors,
+                                        startPoint: .center,
+                                        endPoint: .bottom))
+        
+            
       
     }
   

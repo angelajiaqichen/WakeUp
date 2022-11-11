@@ -18,6 +18,7 @@ struct QuoteView: View {
         
             
               VStack{
+                  Spacer()
                 Text("Quote of the Day:").padding()
                       .foregroundColor(.white)
                       .font(.custom(
@@ -37,7 +38,7 @@ struct QuoteView: View {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(LinearGradient(colors: colors,
                                     startPoint: .top,
-                                    endPoint: .center))
+                                    endPoint: .bottom))
     
       
       
