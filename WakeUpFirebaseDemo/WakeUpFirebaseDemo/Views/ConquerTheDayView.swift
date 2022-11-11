@@ -26,6 +26,7 @@ struct ConquerTheDayView: View {
                                   startPoint: .top,
                                   endPoint: .bottom))
       
+
   }
 }
 
