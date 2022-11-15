@@ -43,9 +43,14 @@ struct IntroView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Weather").foregroundColor(.purple)
                         }
                         
+                    }
+                    Button(action: {}){
+                        HStack{
+                            Text("Weather").foregroundColor(.purple)
+                            Image(systemName: "info.circle").foregroundColor(.purple)
+                        }
                     }
                 }
                 Spacer()
@@ -109,8 +114,7 @@ struct IntroView: View {
             Spacer()
             HStack(alignment: .center) {
                 Spacer()
-                
-                Spacer()
+        
                 VStack{
                     Button(action: {self.quoteSelected.toggle()}) {
                         VStack{
