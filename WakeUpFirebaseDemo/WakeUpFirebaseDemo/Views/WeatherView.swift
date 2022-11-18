@@ -32,13 +32,34 @@ struct WeatherView: View {
                         .foregroundColor(.blue)
                         .padding()
                 )
-            
-            
-
-                    
-    
+  
             Spacer()
+          if (self.viewModel.weatherType == "Sunny" || self.viewModel.weatherType == "Mostly Sunny") {
+            Text("Put on some sunscreen\nand enjoy the sunshine:)").font(.custom(
+              "Avenir",
+              fixedSize: 20))
+              .foregroundColor(.blue)
+              .multilineTextAlignment(.center)// replace "!" with a sunny emoji?
+          }
+          
+          else if (self.viewModel.weatherType == "Rain" || self.viewModel.weatherType == "Rain and Snow" || self.viewModel.weatherType == "Showers" || self.viewModel.weatherType == "T-Storms" || self.viewModel.weatherType == "Mostly Cloudy w/ T-Storms") {
+            Text("Bring your umbrella\nand find peace in the rain").font(.custom(
+              "Avenir",
+              fixedSize: 20))
+              .foregroundColor(.blue)
+              .multilineTextAlignment(.center)// umbrella emoji?
+          }
+          /*
+          else {
+            Text("Bring your umbrella\nand find peace in the rain").font(.custom(
+              "Avenir",
+              fixedSize: 20))
+              .foregroundColor(.blue)
+              .multilineTextAlignment(.center)
+          }
+           */
             Spacer()
+          
             
         }.onAppear(perform: loadData)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -51,8 +72,8 @@ struct WeatherView: View {
     func loadData() {
         WeatherParser().fetchWeather { (weather) in
             
-            print(weather)
-            print(weather.weatherDetails.imperial.value)
+            //print(weather)
+            //print(weather.weatherDetails.imperial.value)
             self.viewModel.weatherType = weather.weatherType
             self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
             
