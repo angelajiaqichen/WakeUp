@@ -1,5 +1,5 @@
 //
-//  EKEventStore+AsyncFetch.swift .swift
+//  EKEventStore+AsyncFetch.swift
 //  WakeUpFirebaseDemo
 //
 //  Created by Angela Chen on 11/28/22.
