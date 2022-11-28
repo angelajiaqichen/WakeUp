@@ -20,9 +20,11 @@ struct ContentView: View {
 
         VStack{
             TabView {
+                CalendarView() // delete this line when done with testing calendar
                 SplashScreen()
                 WeatherView()
                 DeepBreathView()
+                CalendarView()
                 AffirmationsView()
                 SuggestionView()
                 QuoteView()

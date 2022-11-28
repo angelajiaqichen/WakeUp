@@ -19,6 +19,9 @@
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
 		162A29C12917166E0064BAC0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C02917166E0064BAC0 /* Tasks.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
+		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
+		16D581AC29353EC700054EA1 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AB29353EC700054EA1 /* Calendar.swift */; };
+		16D581AE29353EE000054EA1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AD29353EE000054EA1 /* CalendarView.swift */; };
 		16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D715BA2919926C0021A8D8 /* ViewModel.swift */; };
 		16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E90440291D8AD400E91CB4 /* SuggestionView.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
@@ -33,7 +36,6 @@
 		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
 		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
-		E3F10412291D8EFD007558F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3F10411291D8EFD007558F4 /* GoogleService-Info.plist */; };
 		E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10413291D8FAA007558F4 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,9 @@
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16D581AB29353EC700054EA1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		16D581AD29353EE000054EA1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		16D715BA2919926C0021A8D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		16E90440291D8AD400E91CB4 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +67,6 @@
 		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
-		E3F10411291D8EFD007558F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3F10413291D8FAA007558F4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E3F10413291D8FAA007558F4 /* SplashScreen.swift */,
 				16E90440291D8AD400E91CB4 /* SuggestionView.swift */,
+				16D581AD29353EE000054EA1 /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,7 +127,7 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E3F10411291D8EFD007558F4 /* GoogleService-Info.plist */,
+				16D581A929353EA700054EA1 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
 				16099DB3291869A2008E01CC /* Views */,
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
@@ -157,6 +162,7 @@
 				162A29B6291715460064BAC0 /* Events.swift */,
 				162A29B82917158C0064BAC0 /* Intentions.swift */,
 				162A29C2291716AA0064BAC0 /* Weather.swift */,
+				16D581AB29353EC700054EA1 /* Calendar.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,7 +251,7 @@
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
-				E3F10412291D8EFD007558F4 /* GoogleService-Info.plist in Resources */,
+				16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */,
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +265,7 @@
 			files = (
 				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
 				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
+				16D581AE29353EE000054EA1 /* CalendarView.swift in Sources */,
 				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
 				162A29B7291715460064BAC0 /* Events.swift in Sources */,
 				162A29B5291715070064BAC0 /* Affirmation.swift in Sources */,
@@ -268,6 +275,7 @@
 				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
 				E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */,
 				16099DB229186998008E01CC /* WeatherView.swift in Sources */,
+				16D581AC29353EC700054EA1 /* Calendar.swift in Sources */,
 				16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */,
 				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
 				162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */,
