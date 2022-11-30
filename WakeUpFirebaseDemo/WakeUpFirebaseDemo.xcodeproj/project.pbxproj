@@ -58,6 +58,7 @@
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16D581AB29353EC700054EA1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		16D581AD29353EE000054EA1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				165BE5682937DE7300CDA7F1 /* Info.plist */,
 				16D581A929353EA700054EA1 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
 				16099DB3291869A2008E01CC /* Views */,
@@ -446,6 +448,9 @@
 				DEVELOPMENT_TEAM = 63LQ2YWMWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WakeUpFirebaseDemo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Your calendar can help you stay on track.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +482,9 @@
 				DEVELOPMENT_TEAM = 63LQ2YWMWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WakeUpFirebaseDemo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Your calendar can help you stay on track.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
