@@ -26,6 +26,10 @@ struct TasksView: View {
   
           Spacer()
           Spacer()
+        
+          Button(action: {}) {
+            Text("Back")
+          }
           
       }.onAppear(perform: loadTasks)
     
