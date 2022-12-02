@@ -9,6 +9,9 @@ import SwiftUI
 
 struct TasksView: View {
   @ObservedObject var viewModel = ViewModel()
+  private var reminderStore: ReminderStore { ReminderStore.shared }
+  var reminders: [Reminder] = []
+  
   let colors = [
       Color(red: 0.69411, green: 0.70196, blue: 0.9333),
       Color(red: 0.99216, green: 0.9725, blue: 0.5333),
@@ -20,7 +23,7 @@ struct TasksView: View {
               .foregroundColor(.white)
           Spacer()
           Text("You have X tasks today") // CHANGE "X" INTO NUM OF TASKS
-          Text("\(String(format: "%.0f",self.viewModel.weatherTemp))ºF\n \(self.viewModel.weatherType)")
+          //Text("\(String(format: "%.0f",self.viewModel.weatherTemp))ºF\n \(self.viewModel.weatherType)")
         
                   
   
@@ -42,9 +45,11 @@ struct TasksView: View {
       
   }
   
-  func loadTasks() {
+  func loadTasks() { //viewDidLoad dupe/simulation
       //ReminderStore...
-      WeatherParser().fetchWeather { (task) in
+      //private var reminderStore: ReminderStore { ReminderStore.shared }
+      prepareReminderStore()
+      //reminderStore.fetchWeather { (task) in
           
           //print(task)
 
@@ -52,9 +57,31 @@ struct TasksView: View {
           //self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
           
       }
-      
+  
+  func prepareReminderStore() {
+      Task {
+          do {
+              try await reminderStore.requestAccess()
+              reminders = try await reminderStore.readAll()
+          } catch TodayError.accessDenied, TodayError.accessRestricted {
+              #if DEBUG
+              reminders = Reminder.sampleData
+              #endif
+          } catch {
+              //showError(error)
+              //print(error)
+              print("There is an error!")
+          }
+          //updateSnapshot()
+      }
   }
+  
+  
+  
+  
 }
+  
+
 
 struct TasksView_Previews: PreviewProvider {
     static var previews: some View {
