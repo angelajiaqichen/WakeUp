@@ -10,7 +10,7 @@ import SwiftUI
 struct TasksView: View {
   @ObservedObject var viewModel = ViewModel()
   private var reminderStore: ReminderStore { ReminderStore.shared }
-  var reminders: [Reminder] = []
+  //var reminders: [Reminder] = []
   
   let colors = [
       Color(red: 0.69411, green: 0.70196, blue: 0.9333),
@@ -59,7 +59,8 @@ struct TasksView: View {
       }
   
   func prepareReminderStore() {
-      Task {
+      var reminders: [Reminder] = []
+      Task { //must call functions marked as async from within a Task or another asynchronous function
           do {
               try await reminderStore.requestAccess()
               reminders = try await reminderStore.readAll()
