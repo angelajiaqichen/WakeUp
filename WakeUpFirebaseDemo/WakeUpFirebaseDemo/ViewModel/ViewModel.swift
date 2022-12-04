@@ -24,15 +24,19 @@ class ViewModel: ObservableObject {
   //SUGGESTION
   let sugDeck = SuggestionDeck()
   @Published var suggestion: Suggestion
- 
+    
+//  var userRepository = UserRepository()
+//
+//  let userProfiles = userRepository.updateIntentionData(intentions: ["rebecca: testing on december 4th","hihihihih"] )
   
   init(){
     self.quote = deck.drawRandomQuote()
     self.affirmations = affDeck.drawFiveRandomAffirmations()
     self.suggestion = sugDeck.drawRandomSuggestion()
+    
+//    self.userRepository = userRepository.updateIntentionData(intentions: ["test the function","asdfa"] )
   }
-  
-  
+    
   func drawDifferentQuote(){ //A method to update the self.flashcard variable to a different random card.
     self.quote = deck.drawRandomQuote()
   }

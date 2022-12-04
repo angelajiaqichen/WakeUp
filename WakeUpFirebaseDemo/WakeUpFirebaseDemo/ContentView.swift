@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
+    @ObservedObject var userRepository = UserRepository()
 
     private let colors: [Color] = [.red,.blue,.green]
     @State private var weatherSelected = false
@@ -19,11 +20,12 @@ struct ContentView: View {
     @State private var affirmationsSelected = false
     
     var body: some View {
-
+      
         VStack{
             TabView {
+                let userProfiles = userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
                 SplashScreen()
-                OnboardView()
+                IntentionsView()
                 IntroView(
                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
                 quoteSelected: $quoteSelected,
