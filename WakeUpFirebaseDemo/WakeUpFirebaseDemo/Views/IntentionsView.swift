@@ -50,6 +50,10 @@ struct IntentionsView: View {
                     "Avenir",
                     fixedSize: 20))
             .multilineTextAlignment(.center)
+            .onSubmit{
+                userRepository.updateIntentionData(intentions: [intention1,intention2,intention3] )
+//                userRepository.reviewIntentions()
+            }
 //          Button("Add the second Intention") {
 //                          secondIntention.toggle()
 //                      }
@@ -75,6 +79,11 @@ struct IntentionsView: View {
 //                          .multilineTextAlignment(.center)
 //                      }
 //        Button("Submit")
+//        SecureField("Password", text: $password)
+//                    .onSubmit {
+//                        print("Authenticating…")
+//                    }
+//          userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
           Spacer()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(LinearGradient(colors: colors,

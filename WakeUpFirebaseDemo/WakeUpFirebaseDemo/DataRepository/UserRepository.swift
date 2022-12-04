@@ -21,6 +21,7 @@ class UserRepository: ObservableObject {
   private let db = Firestore.firestore()
 
   @Published var users: [User] = []
+    
   //private var cancellables: Set<AnyCancellable> = []
   
 //
@@ -59,7 +60,7 @@ class UserRepository: ObservableObject {
         
     print("hello world")
     // Complete this function
-    db.collection("user-profiles")
+    db.collection("users")
       .addSnapshotListener { querySnapshot, error in
         if let error = error {
             print("Error getting documents: \(error)")
@@ -86,7 +87,7 @@ class UserRepository: ObservableObject {
     }
     func updateIntentionData(intentions: [String]) {
         var ref: DocumentReference? = nil
-        ref = db.collection("affirmation").addDocument(data: ["UUID": "12345",
+        ref = db.collection("users").addDocument(data: ["UUID": "12345",
                                                   "streak": 7,
                                                   "features": ["weather"],
                                                    "intentions": intentions]
@@ -111,5 +112,25 @@ class UserRepository: ObservableObject {
 //                                                  "features": ["weather"],
 //                                                   "intentions": ["firebase test 1"]])
     }
+    
+    func fetchData() {
+        db.collection("users").addSnapshotListener(){ (QuerySnapshot, error) in
+            guard let documents = QuerySnapshot?.documents else {
+                print("No documents")
+                return
+            }
+            self.users = documents.map{(QueryDocumentSnapshot)->User in
+                let data = QueryDocumentSnapshot.data()
+                let UUID = data["UUID"] as? String ?? ""
+                let streak = data["streak"] as? Int ?? 0
+                let features = data["features"] as? [String] ?? []
+                let intentions = data["intentions"] as? [String] ?? []
+                
+                let user = User(UUID: UUID, streak: streak, features: features, intentions: intentions)
+                return user
+            }
+        }
+    }
+    
     
 }
