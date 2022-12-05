@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 struct TaskItem {
   let name: String?

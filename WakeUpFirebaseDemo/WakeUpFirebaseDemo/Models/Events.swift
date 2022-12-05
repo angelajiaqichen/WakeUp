@@ -5,7 +5,6 @@
 //  Created by Angela Chen on 11/5/22.
 //
 
-import UIKit
 import Foundation
 
 struct EventItem {
