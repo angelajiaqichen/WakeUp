@@ -24,7 +24,6 @@
 		16D581AC29353EC700054EA1 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AB29353EC700054EA1 /* Calendar.swift */; };
 		16D581AE29353EE000054EA1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AD29353EE000054EA1 /* CalendarView.swift */; };
 		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
-		16D581B229354A7900054EA1 /* TodayError.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B129354A7900054EA1 /* TodayError.Swift */; };
 		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
 		16D581B82935540900054EA1 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B72935540900054EA1 /* ReminderStore.swift */; };
 		16D581BE2935673100054EA1 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */; };
@@ -63,7 +62,6 @@
 		16D581AB29353EC700054EA1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		16D581AD29353EE000054EA1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		16D581AF2935495900054EA1 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
-		16D581B129354A7900054EA1 /* TodayError.Swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.Swift; sourceTree = "<group>"; };
 		16D581B52935503200054EA1 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		16D581B72935540900054EA1 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
 		16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 				162A29C2291716AA0064BAC0 /* Weather.swift */,
 				16D581AB29353EC700054EA1 /* Calendar.swift */,
 				16D581AF2935495900054EA1 /* Reminders.swift */,
-				16D581B129354A7900054EA1 /* TodayError.Swift */,
 				16D581B52935503200054EA1 /* Reminder+EKReminder.swift */,
 				16D581B72935540900054EA1 /* ReminderStore.swift */,
 				16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */,
@@ -306,7 +303,6 @@
 				16099DAD29185343008E01CC /* WeatherParser.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
-				16D581B229354A7900054EA1 /* TodayError.Swift in Sources */,
 				16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */,
 				E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */,
 				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,

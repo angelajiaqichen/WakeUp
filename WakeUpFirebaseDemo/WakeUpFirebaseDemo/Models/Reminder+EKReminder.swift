@@ -14,7 +14,10 @@ import EventKit
 extension Reminder {
     init(with ekReminder: EKReminder) throws {
         guard let dueDate = ekReminder.alarms?.first?.absoluteDate else {
-            throw TodayError.reminderHasNoDueDate
+            print("error")
+            throw NSError(domain: "no due date", code: 42, userInfo: nil )
+          
+            //throw TodayError.reminderHasNoDueDate
         }
         id = ekReminder.calendarItemIdentifier
         title = ekReminder.title
