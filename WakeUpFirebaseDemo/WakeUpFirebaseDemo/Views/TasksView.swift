@@ -48,7 +48,11 @@ struct TasksView: View {
   func loadTasks() { //viewDidLoad dupe/simulation
       //ReminderStore...
       //private var reminderStore: ReminderStore { ReminderStore.shared }
-      prepareReminderStore()
+      print("preparing reminder store")
+      var reminders: [Reminder] = []
+      reminders = prepareReminderStore()
+      print("prepared reminder store")
+    
       //reminderStore.fetchWeather { (task) in
           
           //print(task)
@@ -58,12 +62,16 @@ struct TasksView: View {
           
       }
   
-  func prepareReminderStore() {
+  //func prepareReminderStore() {
+  func prepareReminderStore() -> [Reminder] {
+
       var reminders: [Reminder] = []
       Task { //must call functions marked as async from within a Task or another asynchronous function
           do {
               try await reminderStore.requestAccess()
+              print("preparing reminderstore - requested access")
               reminders = try await reminderStore.readAll()
+              print("preparing reminderstore - done read all")
           /*
           } catch TodayError.accessDenied, TodayError.accessRestricted {
               #if DEBUG
@@ -76,6 +84,9 @@ struct TasksView: View {
               print("There is an error!")
           }
           //updateSnapshot()
+      }
+      for reminder in reminders{
+        print(reminder.title)
       }
   }
   
