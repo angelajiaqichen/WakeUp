@@ -24,8 +24,6 @@ struct TasksView: View {
           Spacer()
           Text("You have X tasks today") // CHANGE "X" INTO NUM OF TASKS
           //Text("\(String(format: "%.0f",self.viewModel.weatherTemp))ºF\n \(self.viewModel.weatherType)")
-        
-                  
   
           Spacer()
           Spacer()
@@ -36,12 +34,6 @@ struct TasksView: View {
           
       }.onAppear(perform: loadTasks)
     
-    /*
-          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-          .background(LinearGradient(colors: colors,
-                                      startPoint: .top,
-                                      endPoint: .bottom))
-     */
       
   }
   
@@ -49,8 +41,12 @@ struct TasksView: View {
       //ReminderStore...
       //private var reminderStore: ReminderStore { ReminderStore.shared }
       print("preparing reminder store")
-      var reminders: [Reminder] = []
-      reminders = prepareReminderStore()
+      //var reminders: [Reminder] = []
+      let reminders = prepareReminderStore()
+      print(reminders!.count)
+      for reminder in reminders!{
+        print(reminder.title)
+      }
       print("prepared reminder store")
     
       //reminderStore.fetchWeather { (task) in
@@ -63,31 +59,25 @@ struct TasksView: View {
       }
   
   //func prepareReminderStore() {
-  func prepareReminderStore() -> [Reminder] {
+  func prepareReminderStore() -> [Reminder]? {
 
-      var reminders: [Reminder] = []
+    var reminders: [Reminder] = []
       Task { //must call functions marked as async from within a Task or another asynchronous function
           do {
               try await reminderStore.requestAccess()
               print("preparing reminderstore - requested access")
               reminders = try await reminderStore.readAll()
+              //var reminders = try await reminderStore.readAll()
+              print(reminders.count) //5 //?how do i fetch these reminders outside of the task
               print("preparing reminderstore - done read all")
-          /*
-          } catch TodayError.accessDenied, TodayError.accessRestricted {
-              #if DEBUG
-              reminders = Reminder.sampleData
-              #endif
-           */
+              
           } catch {
-              //showError(error)
-              //print(error)
               print("There is an error!")
           }
-          //updateSnapshot()
       }
-      for reminder in reminders{
-        print(reminder.title)
-      }
+      print(reminders.count) // 0
+      return reminders
+      //return nil
   }
   
   
