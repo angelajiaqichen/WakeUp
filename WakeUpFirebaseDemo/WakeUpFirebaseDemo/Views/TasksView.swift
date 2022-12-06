@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct TasksView: View {
   @ObservedObject var viewModel = ViewModel()
@@ -24,8 +25,10 @@ struct TasksView: View {
           Spacer()
           Text("You have X tasks today") // CHANGE "X" INTO NUM OF TASKS
           //Text("\(String(format: "%.0f",self.viewModel.weatherTemp))ºF\n \(self.viewModel.weatherType)")
-          Text("\(String(self.viewModel.reminders.count))")
-  
+          Text("\(String(viewModel.reminders.count))")
+            
+          
+    
           Spacer()
           Spacer()
         
@@ -67,37 +70,43 @@ struct TasksView: View {
       }*/
   
   
-  //func prepareReminderStore() {
-  //func prepareReminderStore() -> [Reminder]? {
   func prepareReminderStore() async {
 
-      var reminders: [Reminder] = []
+      var reminders: [Reminder] = [] // all reminders
+      var remindersToday: [Reminder] = []
       let doTask = Task { () -> [Reminder] in
         //must call functions marked as async from within a Task or another asynchronous function
           do {
               try await reminderStore.requestAccess()
               print("preparing reminderstore - requested access")
               reminders = try await reminderStore.readAll()
-              print(reminders.count) //5 //?how do i fetch these reminders outside of the task
+              print(reminders.count)
               /*for reminder in reminders{
-                print(reminder.title)
+                print(reminder.dueDate)
               }*/
               print("preparing reminderstore - done read all")
               
           } catch {
-              print("There is an error!")
+              print("error - unknown, failed to prepare reminder store")
           }
-          //print("no error")
           return reminders
       }
     
     let result = await doTask.result
     do {
-      let reminders = try result.get()
-      viewModel.reminders = reminders
-      print(reminders.count)
+      let reminders = try result.get() // this gets all reminders that have a dueDate, those without a due date are automatically filtered out
+      for reminder in reminders{
+        //print(reminder.dueDate)
+        if Calendar.current.isDateInToday(reminder.dueDate){ // this gets today's reminders
+          remindersToday.append(reminder)
+          //print(reminder.dueDate)
+        }
+      }
+      viewModel.reminders = remindersToday // save the retrieved reminders to the viewmodel
+      //print(reminders.count)
+      //print(remindersToday.count)
     } catch {
-      print("unknown error")
+      print("error - cannot get() the result of the Task")
     }
 
   }
