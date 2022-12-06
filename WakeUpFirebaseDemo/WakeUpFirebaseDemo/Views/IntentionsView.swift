@@ -32,24 +32,28 @@ struct IntentionsView: View {
                         fixedSize: 50))
                 .multilineTextAlignment(.center)
           Spacer()
-            TextField("Please type your first intention of the day", text: $intention1)
+            TextField("Please type your first intention", text: $intention1)
             .foregroundColor(.white)
             .font(.custom(
                     "Avenir",
                     fixedSize: 20))
             .multilineTextAlignment(.center)
-            TextField("Please type your second intention of the day", text: $intention2)
+            TextField("Please type your second intention", text: $intention2)
             .foregroundColor(.white)
             .font(.custom(
                     "Avenir",
                     fixedSize: 20))
             .multilineTextAlignment(.center)
-            TextField("Please type your third intention of the day", text: $intention3)
+            TextField("Please type your third intention", text: $intention3)
             .foregroundColor(.white)
             .font(.custom(
                     "Avenir",
                     fixedSize: 20))
             .multilineTextAlignment(.center)
+            .onSubmit{
+                userRepository.updateIntentionData(intentions: [intention1,intention2,intention3] )
+//                userRepository.reviewIntentions()
+            }
 //          Button("Add the second Intention") {
 //                          secondIntention.toggle()
 //                      }
@@ -75,6 +79,11 @@ struct IntentionsView: View {
 //                          .multilineTextAlignment(.center)
 //                      }
 //        Button("Submit")
+//        SecureField("Password", text: $password)
+//                    .onSubmit {
+//                        print("Authenticating…")
+//                    }
+//          userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
           Spacer()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(LinearGradient(colors: colors,

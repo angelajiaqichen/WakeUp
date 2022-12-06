@@ -12,17 +12,18 @@ import Firebase
 
 import SwiftUI
 
-struct User: Decodable {
-
-  let UUID: String
-  var streak: Int
+struct User: Identifiable, Decodable {
+  var id: String? = UUID().uuidString
+  var deviceID: String?
+  var date: String
   var features: [String] //list of selected features
   var intentions: [String]
   
 
     enum CodingKeys: String, CodingKey{
-        case UUID
-        case streak
+        case id
+        case deviceID
+        case date
         case features
         case intentions
       

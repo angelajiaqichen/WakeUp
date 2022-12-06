@@ -23,9 +23,10 @@ struct ContentView: View {
       
         VStack{
             TabView {
-                let userProfiles = userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
+//                let userProfiles = userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
                 SplashScreen()
                 IntentionsView()
+                
                 IntroView(
                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
                 quoteSelected: $quoteSelected,
@@ -49,7 +50,7 @@ struct ContentView: View {
                 if quoteSelected{
                     QuoteView()
                 }
-                
+                SummaryView()
                 ConquerTheDayView()
 
                     }
