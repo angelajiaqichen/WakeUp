@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct IntroView: View {
     let colors = [
         Color(red: 1.0, green: 0.8549, blue: 0.4784),
@@ -19,144 +21,303 @@ struct IntroView: View {
     @Binding var productivitySelected: Bool
     @Binding var breathingSelected: Bool
     @Binding var affirmationsSelected: Bool
-    var body: some View {
-        VStack{
-
-            Text("**WakeUp**").font(.system(size: 36))
-                .foregroundColor(.white)
-            Text("Welcome!").font(.system(size: 20))
-                .foregroundColor(.white)
-            Text("Select the features you would like in your routine")
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-            
-            Spacer()
-            HStack(alignment: .center) {
-                Spacer()
-                VStack{
-                    Button(action: {self.weatherSelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                                .fill(!weatherSelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("Weather")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                        }
-                        
-                    }
-                    Button(action: {}){
-                        HStack{
-                            Text("Weather").foregroundColor(.purple)
-                            Image(systemName: "info.circle").foregroundColor(.purple)
-                        }
-                    }
-                }
-                Spacer()
-                VStack{
-                    Button(action: {self.breathingSelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                            .fill(!breathingSelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("Deep breaths")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Breathing").foregroundColor(.purple)
-                        }
-                    }
-                }
-                Spacer()
-            }
-              
-              
-        
-            Spacer()
-            HStack(alignment: .center) {
-                Spacer()
-                VStack{
-                    Button(action: {self.productivitySelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                            .fill(!productivitySelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("To-do")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Productivity").foregroundColor(.purple)
-                        }
-                    }
-                }
-                Spacer()
-                VStack{
-                    Button(action: {self.suggestionSelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                            .fill(!suggestionSelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("Suggestion")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Suggested Activity").foregroundColor(.purple)
-                        }
-                    }
-                }
-                Spacer()
-                
-            }
-
     
-          
-            Spacer()
-            HStack(alignment: .center) {
+    @State private var showWeatherPopUp = false
+    @State private var showAffirmationPopUp = false
+    @State private var showQuotePopUp = false
+    @State private var showSuggestionPopUp = false
+    @State private var showBreathingPopUp = false
+    @State private var showProductivityPopUp = false
+    var body: some View {
+        ZStack{
+            VStack{
                 Spacer()
-        
-                VStack{
-                    Button(action: {self.quoteSelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                            .fill(!quoteSelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("Quote")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Daily Quotes").foregroundColor(.purple)
+                Text("**WakeUp**").font(.system(size: 36))
+                    .foregroundColor(.white)
+                Text("Select the features you would like in your routine")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                
+                HStack(alignment: .center) {
+                    Spacer()
+                    VStack{
+                        Button(action: { MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "/Users/anaghasrikumar/Desktop/67443/WakeUp/WakeUpFirebaseDemo/Clean Bandit - Rather Be ft. Jess Glynne [Official Video]")}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!weatherSelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("Weather")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                            }
+                            
                         }
-                    }
-                }
-                Spacer()
-                VStack{
-                    Button(action: {self.affirmationsSelected.toggle()}) {
-                        VStack{
-                            RoundedRectangle(cornerRadius: 25.0, style: .circular)
-                            .fill(!affirmationsSelected ? buttonColor: .purple)
-                            .overlay(
-                            Image("Affirmations")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                            Text("Affirmations").foregroundColor(.purple)
+                        Button(action: {
+                            withAnimation(.linear(duration: 1)){
+                                self.showWeatherPopUp = true
+                            }
+                        }){
+                            HStack{
+                                Text("Weather").foregroundColor(.purple)
+                                Image(systemName: "info.circle").foregroundColor(.purple)
                             }
                         }
                     }
+                    Spacer()
+                    VStack{
+                        Button(action: {self.breathingSelected.toggle()}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!breathingSelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("Deep breaths")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                                
+        
+                                Button(action: {
+                                    withAnimation(.linear(duration: 1)){
+                                        self.showBreathingPopUp = true
+                                    }
+                                }){
+                                    HStack{
+                                        Text("Breathing").foregroundColor(.purple)
+                                        Image(systemName: "info.circle").foregroundColor(.purple)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+                }
+                
+                
+                
+                
+                HStack(alignment: .center) {
+                    Spacer()
+                    VStack{
+                        Button(action: {self.productivitySelected.toggle()}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!productivitySelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("To-do")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                                
+                                
+                                Button(action: {
+                                    withAnimation(.linear(duration: 1)){
+                                        self.showProductivityPopUp = true
+                                    }
+                                }){
+                                    HStack{
+                                        Text("Productivity").foregroundColor(.purple)
+                                        Image(systemName: "info.circle").foregroundColor(.purple)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+                    VStack{
+                        Button(action: {self.suggestionSelected.toggle()}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!suggestionSelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("Suggestion")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                                
+                                Button(action: {
+                                    withAnimation(.linear(duration: 1)){
+                                        self.showSuggestionPopUp = true
+                                    }
+                                }){
+                                    HStack{
+                                        Text("Suggested Activity").foregroundColor(.purple)
+                                        Image(systemName: "info.circle").foregroundColor(.purple)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+                    
+                }
+                
+                
+                
+                
+                HStack(alignment: .center) {
+                    Spacer()
+                    
+                    VStack{
+                        Button(action: {self.quoteSelected.toggle()}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!quoteSelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("Quote")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                                Button(action: {
+                                    withAnimation(.linear(duration: 1)){
+                                        self.showQuotePopUp = true
+                                    }
+                                }){
+                                    HStack{
+                                        Text("Quote of the Day").foregroundColor(.purple)
+                                        Image(systemName: "info.circle").foregroundColor(.purple)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+                    VStack{
+                        Button(action: {self.affirmationsSelected.toggle()}) {
+                            VStack{
+                                RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                                    .fill(!affirmationsSelected ? buttonColor: .purple)
+                                    .overlay(
+                                        Image("Affirmations")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                                Button(action: {
+                                    withAnimation(.linear(duration: 1)){
+                                        self.showAffirmationPopUp = true
+                                    }
+                                }){
+                                    HStack{
+                                        Text("Affirmations").foregroundColor(.purple)
+                                        Image(systemName: "info.circle").foregroundColor(.purple)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    Spacer()
+                }
                 
                 Spacer()
-                }
-            
-            Spacer()
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 350))
+                .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 350))
             
-    
+            if $showWeatherPopUp.wrappedValue {
+                popUpView(button: "Weather")
+                  }
+            if $showBreathingPopUp.wrappedValue {
+                popUpView(button: "Breathing")
+                  }
+            if $showProductivityPopUp.wrappedValue {
+                popUpView(button: "Productivity")
+                  }
+            if $showQuotePopUp.wrappedValue {
+                popUpView(button: "Quotes")
+                  }
+            if $showSuggestionPopUp.wrappedValue{
+                popUpView(button: "Activity")
+            }
+            if $showAffirmationPopUp.wrappedValue {
+                popUpView(button: "Affirmations")
+                  }
         }
-      
-    
+            
+            
     }
+        
+        
+        
+    private func popUpView(button: String) -> some View {
+        VStack{
+            if (button == "Weather"){
+                Text("This is weather")
+                Button(action: {
+                           withAnimation(.linear(duration: 0.5)) {
+                               self.showWeatherPopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            if (button == "Breathing"){
+                Text("This is breathing")
+                Button(action: {
+                           withAnimation {
+                               self.showBreathingPopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            if (button == "Productivity"){
+                Text("This is productivity")
+                Button(action: {
+                           withAnimation {
+                               self.showProductivityPopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            if (button == "Activity"){
+                Text("This is suggested activity")
+                Button(action: {
+                           withAnimation {
+                               self.showSuggestionPopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            if (button == "Quotes"){
+                Text("This is Daily quote")
+                Button(action: {
+                           withAnimation {
+                               self.showQuotePopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            if (button == "Affirmations"){
+                Text("This is affirmations")
+                Button(action: {
+                           withAnimation {
+                               self.showAffirmationPopUp = false
+                            }
+                        }, label: {
+                                Text("Close")
+                        })
+            }
+            
+            
+        }
+            .padding()
+            .frame(width: 240, height: 300)
+            .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 300))
+            .cornerRadius(20)
+            .shadow(radius: 20 )
+        
+    }
+    
+    
+    
+}
+
+
+
+
 
 
 struct IntroView_Previews: PreviewProvider {
