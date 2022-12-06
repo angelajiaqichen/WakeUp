@@ -7,16 +7,20 @@
 
 import Foundation
 
-struct EventItem {
-  let name: String?
-  let location: String?
-  let startTime: String?
-  let endTime: String?
+struct Event: Equatable, Identifiable {
+    var id: String = UUID().uuidString
+    var title: String
+    var dueDate: Date
+    var notes: String? = nil
+    var isComplete: Bool = false
 }
 
-//Each event will come from class EKEvent from apple calendar (https://developer.apple.com/documentation/eventkit)
-
-struct Events {
-  let items: [EventItem]
+extension Array where Element == Event {
+    func indexOfCalendar(with id: Event.ID) -> Self.Index {
+        guard let index = firstIndex(where: { $0.id == id }) else {
+            fatalError()
+        }
+        return index
+    }
 }
 
