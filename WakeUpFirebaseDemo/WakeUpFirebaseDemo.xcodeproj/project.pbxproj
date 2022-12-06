@@ -17,7 +17,6 @@
 		162A29B92917158C0064BAC0 /* Intentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B82917158C0064BAC0 /* Intentions.swift */; };
 		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
-		162A29C12917166E0064BAC0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C02917166E0064BAC0 /* Tasks.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
 		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
 		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
@@ -54,7 +53,6 @@
 		162A29B82917158C0064BAC0 /* Intentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intentions.swift; sourceTree = "<group>"; };
 		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
-		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				162A29B4291715070064BAC0 /* Affirmation.swift */,
 				162A29BA291715DC0064BAC0 /* Quote.swift */,
 				162A29BE2917162C0064BAC0 /* Suggestion.swift */,
-				162A29C02917166E0064BAC0 /* Tasks.swift */,
 				162A29B6291715460064BAC0 /* Events.swift */,
 				162A29B82917158C0064BAC0 /* Intentions.swift */,
 				162A29C2291716AA0064BAC0 /* Weather.swift */,
@@ -305,7 +302,6 @@
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
 				16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */,
 				E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */,
-				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
 			);

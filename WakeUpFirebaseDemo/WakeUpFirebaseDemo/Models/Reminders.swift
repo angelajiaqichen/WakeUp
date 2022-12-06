@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Reminder: Equatable, Identifiable {
+struct Reminder: Equatable, Identifiable { // Reminders will be translated into tasks. In our view, Tasks is the representation of Reminders.
     var id: String = UUID().uuidString
     var title: String
     var dueDate: Date
