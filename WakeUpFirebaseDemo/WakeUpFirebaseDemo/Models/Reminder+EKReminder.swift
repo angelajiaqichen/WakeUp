@@ -13,13 +13,12 @@ import EventKit
 
 extension Reminder {
     init(with ekReminder: EKReminder) throws {
-         //require all reminders to have an alarm
+         // require all reminders to have an alarm, reminders with no due date will be automatically ignored
         guard let dueDate = ekReminder.alarms?.first?.absoluteDate else {
             //print(ekReminder.title!)
             //print("error - reminder has no due date")
             throw NSError(domain: "no due date", code: 42, userInfo: nil)
           
-            //throw TodayError.reminderHasNoDueDate
         }
         
         id = ekReminder.calendarItemIdentifier

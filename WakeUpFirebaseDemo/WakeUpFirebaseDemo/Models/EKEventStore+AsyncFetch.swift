@@ -20,7 +20,7 @@ extension EKEventStore {
                     continuation.resume(returning: reminders)
                 } else {
                     print("error with continuation")
-                    //continuation.resume(throwing: TodayError.failedReadingReminders)
+                    //continuation.resume(throwing: Error.failedReadingReminders)
                 }
             }
         }

@@ -28,26 +28,26 @@ class ReminderStore {
             return
         case .restricted:
             print("error: access restricted")
-            //throw TodayError.accessRestricted
+            //throw Error.accessRestricted
         case .notDetermined:
             let accessGranted = try await ekStore.requestAccess(to: .reminder)
             guard accessGranted else {
                 print("error: access not determined and denied")
                 return
-                //throw TodayError.accessDenied
+                //throw Error.accessDenied
             }
         case .denied:
             print("error: access denied")
-            //throw TodayError.accessDenied
+            //throw Error.accessDenied
         @unknown default:
             print("error: unknown error")
-            //throw TodayError.unknown
+            //throw Error.unknown
         }
     }
     
     func readAll() async throws -> [Reminder] {
         guard isAvailable else {
-            //throw TodayError.accessDenied
+            //throw Error.accessDenied
             throw NSError(domain: "accessDenied", code: 500, userInfo: nil)
         }
         
@@ -56,7 +56,7 @@ class ReminderStore {
         let reminders: [Reminder] = try ekReminders.compactMap { ekReminder in
             do {
                 return try Reminder(with: ekReminder)
-            //} catch TodayError.reminderHasNoDueDate {
+            //} catch Error.reminderHasNoDueDate {
             } catch {
                 return nil
             }
