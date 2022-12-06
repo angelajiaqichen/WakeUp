@@ -33,13 +33,17 @@ struct TasksView: View {
           }
         
       //}.onAppear(perform: loadTasks)
-      }.onAppear(perform: loadTasks)
+      }.onAppear(){
+        Task {
+          await prepareReminderStore()
+        }
+      }
     
     
       
   }
   
-  func loadTasks() { //viewDidLoad dupe/simulation
+  /*func loadTasks() { //viewDidLoad dupe/simulation
       //ReminderStore...
       //private var reminderStore: ReminderStore { ReminderStore.shared }
       print("preparing reminder store")
@@ -59,14 +63,16 @@ struct TasksView: View {
           //self.viewModel.weatherType = weather.weatherType
           //self.viewModel.weatherTemp = weather.weatherDetails.imperial.value
           
-      }
+      }*/
   
   
   //func prepareReminderStore() {
-  func prepareReminderStore() -> [Reminder]? {
+  //func prepareReminderStore() -> [Reminder]? {
+  func prepareReminderStore() async {
 
-    var reminders: [Reminder] = []
-      Task { //must call functions marked as async from within a Task or another asynchronous function
+      var reminders: [Reminder] = []
+      let doTask = Task { () -> [Reminder] in
+        //must call functions marked as async from within a Task or another asynchronous function
           do {
               try await reminderStore.requestAccess()
               print("preparing reminderstore - requested access")
@@ -81,17 +87,45 @@ struct TasksView: View {
               print("There is an error!")
           }
           print("no error")
-          return reminders // this is causing the issue
+          return reminders
       }
-      print(reminders.count) // 0
-      //return reminders
-      //return reminders
     
-      return []
+    let result = await doTask.result
+    do {
+      let reminders = try result.get()
+      print(reminders.count)
+    } catch {
+      print("unknown error")
+    }
+
   }
   
   
-  
+  /*
+  func prepareReminderStore() -> [Reminder]? {
+      var reminders: [Reminder] = []
+      Task {
+        //must call functions marked as async from within a Task or another asynchronous function
+          do {
+              try await reminderStore.requestAccess()
+              print("preparing reminderstore - requested access")
+              reminders = try await reminderStore.readAll()
+              print(reminders.count) //5 //?how do i fetch these reminders outside of the task
+              /*for reminder in reminders{
+                print(reminder.title)
+              }*/
+              print("preparing reminderstore - done read all")
+              
+          } catch {
+              print("There is an error!")
+          }
+          print("no error")
+          return reminders
+      }
+      print(reminders.count) // 0
+      return reminders // this is causing the issue -- it's returning (an empty list) as soon as prepareReminderStore() is called
+  }
+  */
   
 }
   
