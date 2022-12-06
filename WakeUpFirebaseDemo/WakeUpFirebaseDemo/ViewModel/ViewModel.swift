@@ -25,11 +25,14 @@ class ViewModel: ObservableObject {
   let sugDeck = SuggestionDeck()
   @Published var suggestion: Suggestion
  
+  //REMINDERS
+  @Published var reminders: [Reminder]
   
   init(){
     self.quote = deck.drawRandomQuote()
     self.affirmations = affDeck.drawFiveRandomAffirmations()
     self.suggestion = sugDeck.drawRandomSuggestion()
+    self.reminders = []
   }
   
   

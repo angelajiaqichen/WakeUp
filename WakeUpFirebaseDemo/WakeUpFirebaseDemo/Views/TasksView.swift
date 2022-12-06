@@ -24,6 +24,7 @@ struct TasksView: View {
           Spacer()
           Text("You have X tasks today") // CHANGE "X" INTO NUM OF TASKS
           //Text("\(String(format: "%.0f",self.viewModel.weatherTemp))ºF\n \(self.viewModel.weatherType)")
+          Text("\(String(self.viewModel.reminders.count))")
   
           Spacer()
           Spacer()
@@ -86,13 +87,14 @@ struct TasksView: View {
           } catch {
               print("There is an error!")
           }
-          print("no error")
+          //print("no error")
           return reminders
       }
     
     let result = await doTask.result
     do {
       let reminders = try result.get()
+      viewModel.reminders = reminders
       print(reminders.count)
     } catch {
       print("unknown error")
