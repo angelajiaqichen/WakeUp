@@ -31,8 +31,10 @@ struct TasksView: View {
           Button(action: {}) {
             Text("Back")
           }
-          
+        
+      //}.onAppear(perform: loadTasks)
       }.onAppear(perform: loadTasks)
+    
     
       
   }
@@ -43,7 +45,8 @@ struct TasksView: View {
       print("preparing reminder store")
       //var reminders: [Reminder] = []
       let reminders = prepareReminderStore()
-      print(reminders!.count)
+      print("in load tasks")
+      print(reminders!.count) //should be 5 but now 0
       for reminder in reminders!{
         print(reminder.title)
       }
@@ -67,17 +70,23 @@ struct TasksView: View {
               try await reminderStore.requestAccess()
               print("preparing reminderstore - requested access")
               reminders = try await reminderStore.readAll()
-              //var reminders = try await reminderStore.readAll()
               print(reminders.count) //5 //?how do i fetch these reminders outside of the task
+              /*for reminder in reminders{
+                print(reminder.title)
+              }*/
               print("preparing reminderstore - done read all")
               
           } catch {
               print("There is an error!")
           }
+          print("no error")
+          return reminders // this is causing the issue
       }
       print(reminders.count) // 0
-      return reminders
-      //return nil
+      //return reminders
+      //return reminders
+    
+      return []
   }
   
   
