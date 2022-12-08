@@ -22,8 +22,8 @@
 		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
+		16467E622942736E0078C8E3 /* WeatherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16467E612942736E0078C8E3 /* WeatherTest.swift */; };
 		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
-		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
 		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
 		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
 		16D581B82935540900054EA1 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B72935540900054EA1 /* ReminderStore.swift */; };
@@ -42,7 +42,6 @@
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
 		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
-		E3BF3D89293C537000FE9C8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF3D88293C537000FE9C8E /* GoogleService-Info.plist */; };
 		E3BF3D95293EB22600FE9C8E /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF3D94293EB22600FE9C8E /* SummaryView.swift */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 		E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10413291D8FAA007558F4 /* SplashScreen.swift */; };
@@ -63,6 +62,7 @@
 		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		16467E612942736E0078C8E3 /* WeatherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTest.swift; sourceTree = "<group>"; };
 		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
-		E3BF3D88293C537000FE9C8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3BF3D94293EB22600FE9C8E /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 		E3F10413291D8FAA007558F4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -121,6 +120,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		16467E602942735F0078C8E3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				16467E612942736E0078C8E3 /* WeatherTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		16D715B9291992450021A8D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +156,7 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				16467E602942735F0078C8E3 /* Tests */,
 				165BE5682937DE7300CDA7F1 /* Info.plist */,
 				16D581A929353EA700054EA1 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
@@ -278,10 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
-				E3BF3D89293C537000FE9C8E /* GoogleService-Info.plist in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
-
-
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +326,7 @@
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
 				16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */,
+				16467E622942736E0078C8E3 /* WeatherTest.swift in Sources */,
 				E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
