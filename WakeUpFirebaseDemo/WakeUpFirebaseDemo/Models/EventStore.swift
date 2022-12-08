@@ -50,8 +50,9 @@ class EventStore {
         }
         //let dayFromNow = Date().advanced(by: TimeInterval.day)
         let predicate = ekStore.predicateForEvents(withStart: Date(), end: Date(), calendars: nil)
-      
-      let ekEvents = ekStore.events(matching: predicate)
+        //let predicate = ekStore.predicateForEvents(withStart: self.initialDates.first!, end: self.initialDates.last!, calendars: nil)
+        // QUESTION ASK HOW TO GET EVENTS THAT DONT LAST ALL DAY
+        let ekEvents = ekStore.events(matching: predicate)
         /*
         let ekEvents = try await ekStore.fetchEvents(matching: predicate)*/
         let events: [Event] = try ekEvents.compactMap { ekEvent in
