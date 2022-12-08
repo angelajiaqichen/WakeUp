@@ -31,16 +31,26 @@ class ViewModel: ObservableObject {
   //SUGGESTION
   let sugDeck = SuggestionDeck()
   @Published var suggestion: Suggestion
+
 //    
 //  var userProfiles = UserRepository()
 //  @Published var userRepository: UserRepository
 //
 //  let userProfiles = userRepository.updateIntentionData(intentions: ["hihihaifdhiashf: testing on december 4th","hihihihih"] )
+
+    
+  var scale : CGFloat = 1.0
+
+  //let music = MusicPlayer()
+  //@Published var music:
+ 
+
   
   init(){
     self.quote = deck.drawRandomQuote()
     self.affirmations = affDeck.drawFiveRandomAffirmations()
     self.suggestion = sugDeck.drawRandomSuggestion()
+
       DateFormatter().dateFormat = "dd-MM-yyyy"
       self.date = format.string(from: mytime)
       print("this is self date")
@@ -48,6 +58,10 @@ class ViewModel: ObservableObject {
       
     
 //    self.userRepository = userProfiles.updateIntentionData(intentions: ["test the function","asdfa"] )
+
+    
+
+
   }
     
   func drawDifferentQuote(){ //A method to update the self.flashcard variable to a different random card.
@@ -59,10 +73,25 @@ class ViewModel: ObservableObject {
     self.affirmations = affDeck.drawFiveRandomAffirmations()
   }
     
+
 //    func updateFirebaseIntentionData(intentions:[String]){
 //    self.userRepository = userProfiles.updateIntentionData(intentions)
 //  }
 
+
+
+
+    func animateCircle(){
+        for _ in 0...2{
+            scale += 1
+        }
+        if (scale==3){
+            for _ in 0...2{
+                scale -= 1
+            }
+        }
+    }
+  
 
 
 

@@ -31,6 +31,7 @@ struct SplashScreen: View {
         .background(LinearGradient(colors: colors,
                                     startPoint: .top,
                                     endPoint: .bottom))
+        .ignoresSafeArea()
         
     }
 }

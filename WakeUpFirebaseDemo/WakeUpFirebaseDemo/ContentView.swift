@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
+
     @ObservedObject var userRepository = UserRepository()
+
+    @State private var isMinimized = true
+    @State private var animationDuration = 0.5
+
 
     private let colors: [Color] = [.red,.blue,.green]
     @State private var weatherSelected = false
@@ -32,13 +37,14 @@ struct ContentView: View {
                 quoteSelected: $quoteSelected,
                 productivitySelected: $productivitySelected,
                           breathingSelected: $breathingSelected,
-                affirmationsSelected: $affirmationsSelected)
+                    affirmationsSelected: $affirmationsSelected)
                 
                 if weatherSelected{
                     WeatherView()
                 }
                 if breathingSelected{
-                    DeepBreathView()
+                    
+                    DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
                 }
                 if affirmationsSelected{
                     AffirmationsView()
@@ -57,13 +63,17 @@ struct ContentView: View {
                     .tabViewStyle(PageTabViewStyle())
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .ignoresSafeArea()
+                    
+                    
         }
+        
                 
         
 
     }
 
 }
+
 
 
 
