@@ -49,8 +49,8 @@ class EventStore {
             throw NSError(domain: "accessDenied", code: 500, userInfo: nil)
         }
         //let dayFromNow = Date().advanced(by: TimeInterval.day)
-        let predicate = ekStore.predicateForEvents(withStart: Date(), end: Date(), calendars: nil)
-        //let predicate = ekStore.predicateForEvents(withStart: self.initialDates.first!, end: self.initialDates.last!, calendars: nil)
+        //let predicate = ekStore.predicateForEvents(withStart: Date(), end: Date(), calendars: nil)
+        let predicate = ekStore.predicateForEvents(withStart: Date().dayBefore, end: Date().dayAfter, calendars: nil)
         // QUESTION ASK HOW TO GET EVENTS THAT DONT LAST ALL DAY
         let ekEvents = ekStore.events(matching: predicate)
         /*

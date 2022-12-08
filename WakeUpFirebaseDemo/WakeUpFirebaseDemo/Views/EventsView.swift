@@ -81,8 +81,15 @@ struct EventsView: View {
     let result = await doTask.result
     do {
       let events = try result.get() // this gets all events that have a dueDate, those without a due date are automatically filtered out
-      
-      viewModel.events = events // save the retrieved events to the viewmodel
+      for event in events{
+        //print(reminder.dueDate)
+        if Calendar.current.isDateInToday(event.endDate){ // this gets today's reminders
+          eventsToday.append(event)
+          //print(reminder.dueDate)
+        }
+      }
+
+      viewModel.events = eventsToday // save the retrieved events to the viewmodel
       //print(events.count)
       //print(eventsToday.count)
     } catch {
