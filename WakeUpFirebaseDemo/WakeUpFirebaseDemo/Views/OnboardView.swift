@@ -22,7 +22,7 @@ struct OnboardView: View {
                 .frame(width: 320, height: 320)
                 
                 .overlay(
-                    Text("WakeUp is a wellness app to help you alleviate the dread associated with waking up. Our app features different exercises that you can perform in the morning to alleviate anxiety and panic.").foregroundColor(.white).multilineTextAlignment(.center)).padding()
+                    Text("WakeUp is a wellness app to help you alleviate the dread associated with waking up. Our app features different exercises that you can perform in the morning to alleviate anxiety and panic.").foregroundColor(.white).padding().multilineTextAlignment(.center))
                 Spacer()
             }
             

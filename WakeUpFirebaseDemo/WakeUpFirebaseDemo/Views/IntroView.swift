@@ -41,7 +41,7 @@ struct IntroView: View {
                 HStack(alignment: .center) {
                     Spacer()
                     VStack{
-                        Button(action: { MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "/Users/anaghasrikumar/Desktop/67443/WakeUp/WakeUpFirebaseDemo/Clean Bandit - Rather Be ft. Jess Glynne [Official Video]")}) {
+                        Button(action: {self.weatherSelected.toggle()}) {
                             VStack{
                                 RoundedRectangle(cornerRadius: 25.0, style: .circular)
                                     .fill(!weatherSelected ? buttonColor: .purple)
@@ -75,8 +75,8 @@ struct IntroView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 150, height: 100)).frame(width: 150, height: 150)
-                                
-        
+                            }
+                        }
                                 Button(action: {
                                     withAnimation(.linear(duration: 1)){
                                         self.showBreathingPopUp = true
@@ -87,8 +87,8 @@ struct IntroView: View {
                                         Image(systemName: "info.circle").foregroundColor(.purple)
                                     }
                                 }
-                            }
-                        }
+                            
+                        
                     }
                     Spacer()
                 }
@@ -108,6 +108,8 @@ struct IntroView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                            }
+                        }
                                 
                                 
                                 Button(action: {
@@ -120,8 +122,6 @@ struct IntroView: View {
                                         Image(systemName: "info.circle").foregroundColor(.purple)
                                     }
                                 }
-                            }
-                        }
                     }
                     Spacer()
                     VStack{
@@ -134,6 +134,8 @@ struct IntroView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                            }
+                        }
                                 
                                 Button(action: {
                                     withAnimation(.linear(duration: 1)){
@@ -145,8 +147,8 @@ struct IntroView: View {
                                         Image(systemName: "info.circle").foregroundColor(.purple)
                                     }
                                 }
-                            }
-                        }
+                            
+                        
                     }
                     Spacer()
                     
@@ -168,6 +170,8 @@ struct IntroView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                            }
+                        }
                                 Button(action: {
                                     withAnimation(.linear(duration: 1)){
                                         self.showQuotePopUp = true
@@ -178,8 +182,8 @@ struct IntroView: View {
                                         Image(systemName: "info.circle").foregroundColor(.purple)
                                     }
                                 }
-                            }
-                        }
+                            
+                        
                     }
                     Spacer()
                     VStack{
@@ -192,6 +196,8 @@ struct IntroView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 150, height: 100)).frame(width: 150, height: 150)
+                            }
+                        }
                                 Button(action: {
                                     withAnimation(.linear(duration: 1)){
                                         self.showAffirmationPopUp = true
@@ -202,8 +208,8 @@ struct IntroView: View {
                                         Image(systemName: "info.circle").foregroundColor(.purple)
                                     }
                                 }
-                            }
-                        }
+                            
+                        
                     }
                     
                     Spacer()
@@ -240,8 +246,10 @@ struct IntroView: View {
         
     private func popUpView(button: String) -> some View {
         VStack{
+            Spacer()
             if (button == "Weather"){
-                Text("This is weather")
+                Text("Receive current weather conditions so you can be prepared for the day.").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation(.linear(duration: 0.5)) {
                                self.showWeatherPopUp = false
@@ -249,9 +257,12 @@ struct IntroView: View {
                         }, label: {
                                 Text("Close")
                         })
+                Spacer()
             }
             if (button == "Breathing"){
-                Text("This is breathing")
+                Spacer()
+                Text("Daily practice of deep breathing has been proven to stabilize blood pressure and reduce stress. It can also reduce anxiety. ").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation {
                                self.showBreathingPopUp = false
@@ -259,9 +270,12 @@ struct IntroView: View {
                         }, label: {
                                 Text("Close")
                         })
+                Spacer()
             }
             if (button == "Productivity"){
-                Text("This is productivity")
+                Spacer()
+                Text("Keep track of calendar events and tasks so you feel confident to conquer the day. ").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation {
                                self.showProductivityPopUp = false
@@ -269,9 +283,12 @@ struct IntroView: View {
                         }, label: {
                                 Text("Close")
                         })
+                Spacer()
             }
             if (button == "Activity"){
-                Text("This is suggested activity")
+                Spacer()
+                Text("Obtain inspiration for new activities and hobbies! ").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation {
                                self.showSuggestionPopUp = false
@@ -281,7 +298,9 @@ struct IntroView: View {
                         })
             }
             if (button == "Quotes"){
-                Text("This is Daily quote")
+                Spacer()
+                Text("Start your day off with inspiration from one of our motivational quotes. ").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation {
                                self.showQuotePopUp = false
@@ -289,9 +308,12 @@ struct IntroView: View {
                         }, label: {
                                 Text("Close")
                         })
+                Spacer()
             }
             if (button == "Affirmations"){
-                Text("This is affirmations")
+                Spacer()
+                Text("Affirmations give you the power to change your negative thinking patterns and replace them with positive thinking patterns. ").foregroundColor(.white).multilineTextAlignment(.center)
+                Spacer()
                 Button(action: {
                            withAnimation {
                                self.showAffirmationPopUp = false
@@ -299,13 +321,14 @@ struct IntroView: View {
                         }, label: {
                                 Text("Close")
                         })
+                Spacer()
             }
             
             
         }
             .padding()
             .frame(width: 240, height: 300)
-            .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 300))
+            .background(colors[1])
             .cornerRadius(20)
             .shadow(radius: 20 )
         

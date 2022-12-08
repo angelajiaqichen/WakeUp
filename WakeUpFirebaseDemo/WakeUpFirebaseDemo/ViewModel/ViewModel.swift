@@ -24,12 +24,19 @@ class ViewModel: ObservableObject {
   //SUGGESTION
   let sugDeck = SuggestionDeck()
   @Published var suggestion: Suggestion
+    
+  var scale : CGFloat = 1.0
+
+  //let music = MusicPlayer()
+  //@Published var music:
  
   
   init(){
     self.quote = deck.drawRandomQuote()
     self.affirmations = affDeck.drawFiveRandomAffirmations()
     self.suggestion = sugDeck.drawRandomSuggestion()
+    
+
   }
   
   
@@ -41,6 +48,18 @@ class ViewModel: ObservableObject {
   func drawDifferentAffirmations(){
     self.affirmations = affDeck.drawFiveRandomAffirmations()
   }
+    
+
+    func animateCircle(){
+        for _ in 0...2{
+            scale += 1
+        }
+        if (scale==3){
+            for _ in 0...2{
+                scale -= 1
+            }
+        }
+    }
   
 
 
