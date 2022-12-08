@@ -23,7 +23,6 @@
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
 		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
 		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
-		16D581AE29353EE000054EA1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AD29353EE000054EA1 /* CalendarView.swift */; };
 		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
 		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
 		16D581B82935540900054EA1 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B72935540900054EA1 /* ReminderStore.swift */; };
@@ -62,7 +61,6 @@
 		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		16D581AD29353EE000054EA1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		16D581AF2935495900054EA1 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
 		16D581B52935503200054EA1 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		16D581B72935540900054EA1 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E3F10413291D8FAA007558F4 /* SplashScreen.swift */,
 				16E90440291D8AD400E91CB4 /* SuggestionView.swift */,
-				16D581AD29353EE000054EA1 /* CalendarView.swift */,
 				165BE569293922DE00CDA7F1 /* TasksView.swift */,
 				16040A9D29416918003B49C0 /* EventsView.swift */,
 			);
@@ -287,7 +284,6 @@
 				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
 				16040A9A29415F6E003B49C0 /* Event+EKEvent.swift in Sources */,
 				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
-				16D581AE29353EE000054EA1 /* CalendarView.swift in Sources */,
 				16D581B02935495900054EA1 /* Reminders.swift in Sources */,
 				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
 				162A29B7291715460064BAC0 /* Events.swift in Sources */,
