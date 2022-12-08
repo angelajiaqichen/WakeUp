@@ -25,5 +25,19 @@ extension EKEventStore {
             }
         }
     }
+  
+  /*func fetchEvents(matching predicate: NSPredicate) async throws -> [EKEvent] {
+      try await withCheckedThrowingContinuation { continuation in
+          fetchEvents(matching: predicate) { events in
+              if let events = events {
+                  continuation.resume(returning: events)
+              } else {
+                  print("error with continuation")
+                  //continuation.resume(throwing: Error.failedReadingEvents)
+              }
+          }
+      }
+  }*/
+  
 }
 
