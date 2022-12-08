@@ -9,36 +9,65 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
+    @State private var isMinimized = true
+    @State private var animationDuration = 0.5
 
     private let colors: [Color] = [.red,.blue,.green]
-    @State var offset: CGFloat = 0
+    @State private var weatherSelected = false
+    @State private var suggestionSelected = false
+    @State private var quoteSelected = false
+    @State private var productivitySelected = false
+    @State private var breathingSelected = false
+    @State private var affirmationsSelected = false
+    
     var body: some View {
-
-        //let userProfiles = userRepository.users
-        
-      //Text("Hello, world! Welcome to WakeUp")
 
         VStack{
             TabView {
                 SplashScreen()
-                WeatherView()
-                DeepBreathView()
-                AffirmationsView()
-                SuggestionView()
-                QuoteView()
+                OnboardView()
+                IntroView(
+                    suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
+                quoteSelected: $quoteSelected,
+                productivitySelected: $productivitySelected,
+                          breathingSelected: $breathingSelected,
+                    affirmationsSelected: $affirmationsSelected)
+                
+                if weatherSelected{
+                    WeatherView()
+                }
+                if breathingSelected{
+                    
+                    DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
+                }
+                if affirmationsSelected{
+                    AffirmationsView()
+                }
+                
+                if suggestionSelected{
+                    SuggestionView()
+                }
+                if quoteSelected{
+                    QuoteView()
+                }
+                
                 ConquerTheDayView()
 
                     }
                     .tabViewStyle(PageTabViewStyle())
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .ignoresSafeArea()
+                    
+                    
         }
+        
                 
         
 
     }
 
 }
+
 
 
 
