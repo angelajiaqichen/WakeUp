@@ -17,12 +17,13 @@ struct ContentView: View {
 
 
     private let colors: [Color] = [.red,.blue,.green]
-    @State private var weatherSelected = false
-    @State private var suggestionSelected = false
-    @State private var quoteSelected = false
-    @State private var productivitySelected = false
-    @State private var breathingSelected = false
-    @State private var affirmationsSelected = false
+    // set the "selected" vars all to true for testing purposes. do not merge this
+    @State private var weatherSelected = true
+    @State private var suggestionSelected = true
+    @State private var quoteSelected = true
+    @State private var productivitySelected = true
+    @State private var breathingSelected = true
+    @State private var affirmationsSelected = true
     
     var body: some View {
       
