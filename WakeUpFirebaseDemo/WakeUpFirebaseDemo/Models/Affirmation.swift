@@ -95,6 +95,9 @@ class AffirmationDeck {
       var aff = Affirmation(text: txt)
       aff.text = txt
       affirmations.append(aff)
+      //testing: length = 68
+      //testing: any affirmation text belongs to "affirmarions" deck
+      
     }
     
   }
@@ -105,6 +108,8 @@ class AffirmationDeck {
       var affirm = affirmations[Int(arc4random_uniform(UInt32(affirmations.count)))]
       fiveAffirmations.append(affirm)
     }
+    // testing: len = 5
+    
     return fiveAffirmations
   }
   

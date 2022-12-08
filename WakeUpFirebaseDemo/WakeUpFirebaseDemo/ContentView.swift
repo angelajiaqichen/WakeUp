@@ -28,9 +28,13 @@ struct ContentView: View {
       
         VStack{
             TabView {
+
 //                let userProfiles = userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
+
                 SplashScreen()
                 IntentionsView()
+                EventsView()
+                TasksView()
                 
                 IntroView(
                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,

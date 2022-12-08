@@ -45,11 +45,20 @@ class ViewModel: ObservableObject {
   //@Published var music:
  
 
+  //REMINDERS (TASKS)
+  @Published var reminders: [Reminder]
+  
+  //EVENTS
+  @Published var events: [Event]
+
   
   init(){
     self.quote = deck.drawRandomQuote()
     self.affirmations = affDeck.drawFiveRandomAffirmations()
     self.suggestion = sugDeck.drawRandomSuggestion()
+    self.reminders = []
+    self.events = []
+
 
       DateFormatter().dateFormat = "dd-MM-yyyy"
       self.date = format.string(from: mytime)
@@ -60,6 +69,7 @@ class ViewModel: ObservableObject {
 //    self.userRepository = userProfiles.updateIntentionData(intentions: ["test the function","asdfa"] )
 
     
+
 
 
   }
