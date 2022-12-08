@@ -33,9 +33,42 @@ struct SummaryView: View {
                 if user.deviceID == UIDevice.current.identifierForVendor?.uuidString{
                     if user.date == userRepo.date{
                         Spacer()
-                        Text("\(user.intentions[0])")
-                        Text("\(user.intentions[1])")
-                        Text("\(user.intentions[2])")
+                        RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                            .fill(rectColors[0])
+                            .overlay(
+                              Text("\(user.intentions[0])").multilineTextAlignment(.center)
+                                  .foregroundColor(.white)
+                            )
+                            .frame(width: 350, height: 75)
+                        RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                            .fill(rectColors[1])
+                            .overlay(
+                              Text("\(user.intentions[1])").multilineTextAlignment(.center)
+                                  .foregroundColor(.white)
+                            )
+                            .frame(width: 350, height: 75)
+                        RoundedRectangle(cornerRadius: 25.0, style: .circular)
+                            .fill(rectColors[0])
+                            .overlay(
+                              Text("\(user.intentions[2])").multilineTextAlignment(.center)
+                                  .foregroundColor(.white)
+                            )
+                            .frame(width: 350, height: 75)
+//                        Text("\(user.intentions[0])").foregroundColor(.white)
+//                            .font(.custom(
+//                                    "Avenir",
+//                                    fixedSize: 25))
+//                            .multilineTextAlignment(.center)
+//                        Text("\(user.intentions[1])").foregroundColor(.white)
+//                            .font(.custom(
+//                                    "Avenir",
+//                                    fixedSize: 25))
+//                            .multilineTextAlignment(.center)
+//                        Text("\(user.intentions[2])").foregroundColor(.white)
+//                            .font(.custom(
+//                                    "Avenir",
+//                                    fixedSize: 25))
+//                            .multilineTextAlignment(.center)
                         Spacer()
                     }
 //                    Text("This is the data from the firebase: \(String(userRepo.users.count))")
