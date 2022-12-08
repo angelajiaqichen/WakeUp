@@ -10,9 +10,8 @@ import Foundation
 struct Event: Equatable, Identifiable {
     var id: String = UUID().uuidString
     var title: String
-    var dueDate: Date
-    var notes: String? = nil
-    var isComplete: Bool = false
+    var endDate: Date
+
 }
 
 extension Array where Element == Event {
