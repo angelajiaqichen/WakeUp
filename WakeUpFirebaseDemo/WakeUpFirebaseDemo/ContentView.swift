@@ -32,7 +32,7 @@ struct ContentView: View {
 //                let userProfiles = userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
 
                 SplashScreen()
-                IntentionsView()
+                //IntentionsView()
                 EventsView()
                 TasksView()
                 
@@ -46,20 +46,20 @@ struct ContentView: View {
                 if weatherSelected{
                     WeatherView()
                 }
-                if breathingSelected{
-                    
-                    DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
-                }
-                if affirmationsSelected{
-                    AffirmationsView()
-                }
-                
-                if suggestionSelected{
-                    SuggestionView()
-                }
-                if quoteSelected{
-                    QuoteView()
-                }
+//                if breathingSelected{
+//
+//                    DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
+//                }
+//                if affirmationsSelected{
+//                    AffirmationsView()
+//                }
+//
+//                if suggestionSelected{
+//                    SuggestionView()
+//                }
+//                if quoteSelected{
+//                    QuoteView()
+//                }
                 SummaryView()
                 ConquerTheDayView()
 
