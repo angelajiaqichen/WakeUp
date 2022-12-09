@@ -22,13 +22,17 @@
 		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
+		16467E6A294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16467E69294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift */; };
+		16467E71294280FD0078C8E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16467E70294280FC0078C8E3 /* GoogleService-Info.plist */; };
+		16467E72294280FD0078C8E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16467E70294280FC0078C8E3 /* GoogleService-Info.plist */; };
 		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
-		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
 		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
 		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
 		16D581B82935540900054EA1 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B72935540900054EA1 /* ReminderStore.swift */; };
 		16D581BE2935673100054EA1 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */; };
 		16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D715BA2919926C0021A8D8 /* ViewModel.swift */; };
+		16DAC1972942874F0016B3FD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 16DAC1962942874F0016B3FD /* FirebaseAuth */; };
+		16DAC199294287900016B3FD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 16DAC198294287900016B3FD /* FirebaseFirestore */; };
 		16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E90440291D8AD400E91CB4 /* SuggestionView.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
 		E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA6290B3596002EF995 /* ContentView.swift */; };
@@ -42,11 +46,20 @@
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
 		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
-		E3BF3D89293C537000FE9C8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3BF3D88293C537000FE9C8E /* GoogleService-Info.plist */; };
 		E3BF3D95293EB22600FE9C8E /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF3D94293EB22600FE9C8E /* SummaryView.swift */; };
 		E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3125429181FFD0002F20C /* DeepBreathView.swift */; };
 		E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F10413291D8FAA007558F4 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16467E6B294277E80078C8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E30ADE99290B3596002EF995 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E30ADEA0290B3596002EF995;
+			remoteInfo = WakeUpFirebaseDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16040A9929415F6E003B49C0 /* Event+EKEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+EKEvent.swift"; sourceTree = "<group>"; };
@@ -63,9 +76,11 @@
 		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		16467E67294277E80078C8E3 /* WakeUpFirebaseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeUpFirebaseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16467E69294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoTests.swift; sourceTree = "<group>"; };
+		16467E70294280FC0078C8E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../PriceCheckFB_starter/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
-		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16D581AF2935495900054EA1 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
 		16D581B52935503200054EA1 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		16D581B72935540900054EA1 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
@@ -83,13 +98,21 @@
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
-		E3BF3D88293C537000FE9C8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3BF3D94293EB22600FE9C8E /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		E3D3125429181FFD0002F20C /* DeepBreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBreathView.swift; sourceTree = "<group>"; };
 		E3F10413291D8FAA007558F4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		16467E64294277E80078C8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DAC1972942874F0016B3FD /* FirebaseAuth in Frameworks */,
+				16DAC199294287900016B3FD /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E30ADE9E290B3596002EF995 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +144,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		16467E68294277E80078C8E3 /* WakeUpFirebaseDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				16467E69294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift */,
+			);
+			path = WakeUpFirebaseDemoTests;
+			sourceTree = "<group>";
+		};
 		16D715B9291992450021A8D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +160,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		16DAC1952942874F0016B3FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E30ADE98290B3596002EF995 = {
 			isa = PBXGroup;
 			children = (
 				E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */,
+				16467E68294277E80078C8E3 /* WakeUpFirebaseDemoTests */,
 				E30ADEA2290B3596002EF995 /* Products */,
 				E3999385291C121A00098183 /* Recovered References */,
+				16DAC1952942874F0016B3FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */,
+				16467E67294277E80078C8E3 /* WakeUpFirebaseDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				165BE5682937DE7300CDA7F1 /* Info.plist */,
-				16D581A929353EA700054EA1 /* GoogleService-Info.plist */,
+				16467E70294280FC0078C8E3 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
 				16099DB3291869A2008E01CC /* Views */,
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
@@ -213,6 +254,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		16467E66294277E80078C8E3 /* WakeUpFirebaseDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16467E6D294277E80078C8E3 /* Build configuration list for PBXNativeTarget "WakeUpFirebaseDemoTests" */;
+			buildPhases = (
+				16467E63294277E80078C8E3 /* Sources */,
+				16467E64294277E80078C8E3 /* Frameworks */,
+				16467E65294277E80078C8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16467E6C294277E80078C8E3 /* PBXTargetDependency */,
+			);
+			name = WakeUpFirebaseDemoTests;
+			packageProductDependencies = (
+				16DAC1962942874F0016B3FD /* FirebaseAuth */,
+				16DAC198294287900016B3FD /* FirebaseFirestore */,
+			);
+			productName = WakeUpFirebaseDemoTests;
+			productReference = 16467E67294277E80078C8E3 /* WakeUpFirebaseDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E30ADEA0290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E30ADEAF290B3599002EF995 /* Build configuration list for PBXNativeTarget "WakeUpFirebaseDemo" */;
@@ -245,6 +308,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					16467E66294277E80078C8E3 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = E30ADEA0290B3596002EF995;
+					};
 					E30ADEA0290B3596002EF995 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -268,20 +335,27 @@
 			projectRoot = "";
 			targets = (
 				E30ADEA0290B3596002EF995 /* WakeUpFirebaseDemo */,
+				16467E66294277E80078C8E3 /* WakeUpFirebaseDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		16467E65294277E80078C8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16467E72294280FD0078C8E3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E30ADE9F290B3596002EF995 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
-				E3BF3D89293C537000FE9C8E /* GoogleService-Info.plist in Resources */,
+				16467E71294280FD0078C8E3 /* GoogleService-Info.plist in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
-
-
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +363,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		16467E63294277E80078C8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16467E6A294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E30ADE9D290B3596002EF995 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,7 +411,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		16467E6C294277E80078C8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E30ADEA0290B3596002EF995 /* WakeUpFirebaseDemo */;
+			targetProxy = 16467E6B294277E80078C8E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		16467E6E294277E80078C8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cmu.WakeUpFirebaseDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeUpFirebaseDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WakeUpFirebaseDemo";
+			};
+			name = Debug;
+		};
+		16467E6F294277E80078C8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cmu.WakeUpFirebaseDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeUpFirebaseDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WakeUpFirebaseDemo";
+			};
+			name = Release;
+		};
 		E30ADEAD290B3599002EF995 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,6 +639,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		16467E6D294277E80078C8E3 /* Build configuration list for PBXNativeTarget "WakeUpFirebaseDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16467E6E294277E80078C8E3 /* Debug */,
+				16467E6F294277E80078C8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E30ADE9C290B3596002EF995 /* Build configuration list for PBXProject "WakeUpFirebaseDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -559,6 +692,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 16099DAE29186573008E01CC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		16DAC1962942874F0016B3FD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		16DAC198294287900016B3FD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E30ADEB2290B36E9002EF995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 		E30ADEB3290B36E9002EF995 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
