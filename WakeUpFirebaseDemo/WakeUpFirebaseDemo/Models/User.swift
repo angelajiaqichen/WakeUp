@@ -16,16 +16,20 @@ struct User: Identifiable, Decodable {
   var id: String? = UUID().uuidString
   var deviceID: String?
   var date: String
-  var features: [String] //list of selected features
   var intentions: [String]
+  var quote: String
+  var affirmations: [String]
+  var suggestion: String
   
 
     enum CodingKeys: String, CodingKey{
         case id
         case deviceID
         case date
-        case features
         case intentions
+        case affirmations
+        case quote
+        case suggestion
       
     }
     
