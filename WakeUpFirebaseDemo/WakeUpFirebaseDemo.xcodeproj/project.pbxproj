@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16040A9A29415F6E003B49C0 /* Event+EKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16040A9929415F6E003B49C0 /* Event+EKEvent.swift */; };
+		16040A9C29416486003B49C0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16040A9B29416486003B49C0 /* EventStore.swift */; };
+		16040A9E29416918003B49C0 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16040A9D29416918003B49C0 /* EventsView.swift */; };
+		16040AA02941711E003B49C0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16040A9F2941711E003B49C0 /* DateExtension.swift */; };
 		16099DAD29185343008E01CC /* WeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DAC29185343008E01CC /* WeatherParser.swift */; };
 		16099DB029186573008E01CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 16099DAF29186573008E01CC /* Alamofire */; };
 		16099DB229186998008E01CC /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16099DB129186998008E01CC /* WeatherView.swift */; };
@@ -17,8 +21,13 @@
 		162A29B92917158C0064BAC0 /* Intentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29B82917158C0064BAC0 /* Intentions.swift */; };
 		162A29BB291715DC0064BAC0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BA291715DC0064BAC0 /* Quote.swift */; };
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
-		162A29C12917166E0064BAC0 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C02917166E0064BAC0 /* Tasks.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
+		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
+		16D581AA29353EA700054EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16D581A929353EA700054EA1 /* GoogleService-Info.plist */; };
+		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
+		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
+		16D581B82935540900054EA1 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B72935540900054EA1 /* ReminderStore.swift */; };
+		16D581BE2935673100054EA1 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */; };
 		16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D715BA2919926C0021A8D8 /* ViewModel.swift */; };
 		16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E90440291D8AD400E91CB4 /* SuggestionView.swift */; };
 		E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEA4290B3596002EF995 /* WakeUpFirebaseDemoApp.swift */; };
@@ -40,6 +49,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16040A9929415F6E003B49C0 /* Event+EKEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+EKEvent.swift"; sourceTree = "<group>"; };
+		16040A9B29416486003B49C0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
+		16040A9D29416918003B49C0 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		16040A9F2941711E003B49C0 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		16099DAC29185343008E01CC /* WeatherParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherParser.swift; sourceTree = "<group>"; };
 		16099DB129186998008E01CC /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		16099DB429186BE4008E01CC /* AffirmationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsView.swift; sourceTree = "<group>"; };
@@ -49,8 +62,14 @@
 		162A29B82917158C0064BAC0 /* Intentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intentions.swift; sourceTree = "<group>"; };
 		162A29BA291715DC0064BAC0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		162A29BE2917162C0064BAC0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
-		162A29C02917166E0064BAC0 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		16D581A929353EA700054EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16D581AF2935495900054EA1 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
+		16D581B52935503200054EA1 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
+		16D581B72935540900054EA1 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
 		16D715BA2919926C0021A8D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		16E90440291D8AD400E91CB4 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
 		E30ADEA1290B3596002EF995 /* WakeUpFirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUpFirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +115,8 @@
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
 				E3F10413291D8FAA007558F4 /* SplashScreen.swift */,
 				16E90440291D8AD400E91CB4 /* SuggestionView.swift */,
+				165BE569293922DE00CDA7F1 /* TasksView.swift */,
+				16040A9D29416918003B49C0 /* EventsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,7 +149,8 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E3BF3D88293C537000FE9C8E /* GoogleService-Info.plist */,
+				165BE5682937DE7300CDA7F1 /* Info.plist */,
+				16D581A929353EA700054EA1 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
 				16099DB3291869A2008E01CC /* Views */,
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
@@ -159,10 +181,16 @@
 				162A29B4291715070064BAC0 /* Affirmation.swift */,
 				162A29BA291715DC0064BAC0 /* Quote.swift */,
 				162A29BE2917162C0064BAC0 /* Suggestion.swift */,
-				162A29C02917166E0064BAC0 /* Tasks.swift */,
 				162A29B6291715460064BAC0 /* Events.swift */,
 				162A29B82917158C0064BAC0 /* Intentions.swift */,
 				162A29C2291716AA0064BAC0 /* Weather.swift */,
+				16D581AF2935495900054EA1 /* Reminders.swift */,
+				16D581B52935503200054EA1 /* Reminder+EKReminder.swift */,
+				16040A9929415F6E003B49C0 /* Event+EKEvent.swift */,
+				16D581B72935540900054EA1 /* ReminderStore.swift */,
+				16040A9B29416486003B49C0 /* EventStore.swift */,
+				16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */,
+				16040A9F2941711E003B49C0 /* DateExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +280,8 @@
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
 				E3BF3D89293C537000FE9C8E /* GoogleService-Info.plist in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
+
+
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,27 +293,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D581BE2935673100054EA1 /* EKEventStore+AsyncFetch.swift in Sources */,
 				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
+				16040A9A29415F6E003B49C0 /* Event+EKEvent.swift in Sources */,
 				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
+				16D581B02935495900054EA1 /* Reminders.swift in Sources */,
 				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
 				E34DBAFA29354A7C00E75933 /* IntentionsView.swift in Sources */,
 				162A29B7291715460064BAC0 /* Events.swift in Sources */,
 				162A29B5291715070064BAC0 /* Affirmation.swift in Sources */,
 				162A29C3291716AA0064BAC0 /* Weather.swift in Sources */,
+				16040A9C29416486003B49C0 /* EventStore.swift in Sources */,
 				E30ADEA7290B3596002EF995 /* ContentView.swift in Sources */,
 				E3BF3D95293EB22600FE9C8E /* SummaryView.swift in Sources */,
 				16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */,
 				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
 				E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */,
 				16099DB229186998008E01CC /* WeatherView.swift in Sources */,
+				16040AA02941711E003B49C0 /* DateExtension.swift in Sources */,
 				16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */,
+				165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */,
 				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
+				16D581B82935540900054EA1 /* ReminderStore.swift in Sources */,
+				16040A9E29416918003B49C0 /* EventsView.swift in Sources */,
 				162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */,
 				16099DAD29185343008E01CC /* WeatherParser.swift in Sources */,
 				E30ADEA5290B3596002EF995 /* WakeUpFirebaseDemoApp.swift in Sources */,
 				E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */,
+				16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */,
 				E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */,
-				162A29C12917166E0064BAC0 /* Tasks.swift in Sources */,
 				E30ADEBA290B38A8002EF995 /* User.swift in Sources */,
 				E3D3125529181FFD0002F20C /* DeepBreathView.swift in Sources */,
 			);
@@ -418,6 +456,9 @@
 				DEVELOPMENT_TEAM = 63LQ2YWMWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WakeUpFirebaseDemo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Your calendar can help you stay on track.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +490,9 @@
 				DEVELOPMENT_TEAM = 63LQ2YWMWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WakeUpFirebaseDemo/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Your calendar can help you stay on track.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Your reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

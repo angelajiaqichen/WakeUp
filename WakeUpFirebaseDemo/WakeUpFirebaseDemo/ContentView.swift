@@ -27,9 +27,7 @@ struct ContentView: View {
     @State private var affirmationsSelected = false
     @State private var signup_login_selection: String? = nil
     
-    var body: some View {
-
-        
+    var body: some View {    
             NavigationView{
                     VStack{
                         Spacer()
