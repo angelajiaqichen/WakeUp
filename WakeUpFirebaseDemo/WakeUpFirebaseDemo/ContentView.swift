@@ -39,7 +39,6 @@ struct ContentView: View {
                         Spacer()
                         NavigationLink(destination:
                                         TabView {
-                            Group{
                                 IntroView(
                                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
                                     quoteSelected: $quoteSelected,
@@ -70,8 +69,8 @@ struct ContentView: View {
                                     IntentionsView()
                                     SummaryView()
                                 }
-                                ConquerTheDayView()
-                            }
+                                //ConquerTheDayView()
+                            
                             
                             
                         } .tabViewStyle(PageTabViewStyle())
@@ -80,7 +79,7 @@ struct ContentView: View {
                         
                         NavigationLink(destination:
                             TabView {
-                            Group{
+                    
                                 IntroView(
                                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
                                     quoteSelected: $quoteSelected,
@@ -96,8 +95,8 @@ struct ContentView: View {
                                 CleanEventsView()
                                 IntentionsView()
                                 SummaryView()
-                                ConquerTheDayView()
-                            }
+                            
+                            
                             
                         }.tabViewStyle(PageTabViewStyle())
                             .ignoresSafeArea()
