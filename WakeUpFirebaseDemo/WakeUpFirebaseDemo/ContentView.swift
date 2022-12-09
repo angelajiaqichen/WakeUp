@@ -39,37 +39,40 @@ struct ContentView: View {
                         Spacer()
                         NavigationLink(destination:
                                         TabView {
-                            IntroView(
-                                suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
-                                quoteSelected: $quoteSelected,
-                                productivitySelected: $productivitySelected,
-                                breathingSelected: $breathingSelected,
-                                affirmationsSelected: $affirmationsSelected, editOrIntro: .constant("intro"))
-                            if weatherSelected{
-                                WeatherView()
-                            }
-                            if breathingSelected{
+                            Group{
+                                IntroView(
+                                    suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
+                                    quoteSelected: $quoteSelected,
+                                    productivitySelected: $productivitySelected,
+                                    breathingSelected: $breathingSelected,
+                                    affirmationsSelected: $affirmationsSelected, editOrIntro: .constant("intro"))
+                                if weatherSelected{
+                                    WeatherView()
+                                }
+                                if breathingSelected{
+                                    
+                                    DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
+                                }
+                                if affirmationsSelected{
+                                    AffirmationsView()
+                                }
                                 
-                                DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
-                            }
-                            if affirmationsSelected{
-                                AffirmationsView()
+                                if suggestionSelected{
+                                    SuggestionView()
+                                }
+                                if quoteSelected{
+                                    QuoteView()
+                                }
+                                
+                                if productivitySelected {
+                                    CleanTasksView()
+                                    CleanEventsView()
+                                    IntentionsView()
+                                    SummaryView()
+                                }
+                                ConquerTheDayView()
                             }
                             
-                            if suggestionSelected{
-                                SuggestionView()
-                            }
-                            if quoteSelected{
-                                QuoteView()
-                            }
-                            
-                            if productivitySelected {
-                                CleanTasksView()
-                                CleanEventsView()
-                                IntentionsView()
-                                SummaryView()
-                            }
-                            ConquerTheDayView()
                             
                         } .tabViewStyle(PageTabViewStyle())
                             .ignoresSafeArea()
@@ -77,22 +80,25 @@ struct ContentView: View {
                         
                         NavigationLink(destination:
                             TabView {
-                            IntroView(
-                                suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
-                                quoteSelected: $quoteSelected,
-                                productivitySelected: $productivitySelected,
-                                breathingSelected: $breathingSelected,
-                                affirmationsSelected: $affirmationsSelected, editOrIntro: .constant("edit"))
-                            WeatherView()
-                            DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
-                            AffirmationsView()
-                            SuggestionView()
-                            QuoteView()
-                            CleanTasksView()
-                            CleanEventsView()
-                            IntentionsView()
-                            SummaryView()
-                            ConquerTheDayView()
+                            Group{
+                                IntroView(
+                                    suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
+                                    quoteSelected: $quoteSelected,
+                                    productivitySelected: $productivitySelected,
+                                    breathingSelected: $breathingSelected,
+                                    affirmationsSelected: $affirmationsSelected, editOrIntro: .constant("edit"))
+                                WeatherView()
+                                DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
+                                AffirmationsView()
+                                SuggestionView()
+                                QuoteView()
+                                CleanTasksView()
+                                CleanEventsView()
+                                IntentionsView()
+                                SummaryView()
+                                ConquerTheDayView()
+                            }
+                            
                         }.tabViewStyle(PageTabViewStyle())
                             .ignoresSafeArea()
                         , tag: "login", selection: $signup_login_selection){EmptyView()}
