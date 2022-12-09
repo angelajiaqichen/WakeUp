@@ -21,6 +21,7 @@ struct IntroView: View {
     @Binding var productivitySelected: Bool
     @Binding var breathingSelected: Bool
     @Binding var affirmationsSelected: Bool
+    @Binding var editOrIntro: String
     
     @State private var showWeatherPopUp = false
     @State private var showAffirmationPopUp = false
@@ -32,11 +33,20 @@ struct IntroView: View {
         ZStack{
             VStack{
                 Spacer()
-                Text("**WakeUp**").font(.system(size: 36))
-                    .foregroundColor(.white)
-                Text("Select the features you would like in your routine")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
+                if (self.editOrIntro=="intro"){
+                    Text("**WakeUp**").font(.system(size: 36))
+                        .foregroundColor(.white)
+                    Text("Select the features you would like in your routine")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                }
+                else if (self.editOrIntro == "edit"){
+                    Text("**Welcome, User**").font(.system(size: 36))
+                        .foregroundColor(.white)
+                    Text("Edit your routine below")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                }
                 
                 HStack(alignment: .center) {
                     Spacer()
@@ -345,6 +355,6 @@ struct IntroView: View {
 
 struct IntroView_Previews: PreviewProvider {
     static var previews: some View {
-        IntroView(suggestionSelected: .constant(false), weatherSelected: .constant(false),quoteSelected: .constant(false), productivitySelected: .constant(false),breathingSelected: .constant(false), affirmationsSelected: .constant(false))
+        IntroView(suggestionSelected: .constant(false), weatherSelected: .constant(false),quoteSelected: .constant(false), productivitySelected: .constant(false),breathingSelected: .constant(false), affirmationsSelected: .constant(false), editOrIntro: .constant("intro"))
     }
 }
