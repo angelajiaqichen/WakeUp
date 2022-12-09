@@ -16,63 +16,28 @@ import UIKit
 
 
 class UserRepository: ObservableObject {
-  // Set up properties here
-  //private let path: String = "location_scans"
+
   
   private let db = Firestore.firestore()
 
   @Published var users: [User] = []
   @Published var date: String = ""
+  var viewModel = ViewModel()
     
-  //private var cancellables: Set<AnyCancellable> = []
-  
-//
-//  func updateUser(user:User, UUID: String, streak: Int, features: [String], intention1: String, intention2: String, intention3: String) {
-//    let curr_user = ref.child("users").child(user.UUID)
-//    curr_user.child("UserID").setValue(UUID)
-//    curr_user.child("features").setValue(features)
-//    curr_user.child("intention1").setValue(intention1)
-//    curr_user.child("intention2").setValue(intention2)
-//    curr_user.child("intention3").setValue(intention3)
-//  }
-  
+
   init() {
       self.get()
-//      fetchData()
-    //set()
+      self.getUserProfileInfo()     
   }
-    /*
-    func set(){
-        
-        db.collection("user-profiles").document("testUser").setData([
-            "UUID": "1238092384",
-            "notify": true,
-            "streak": 10,
-            "features": ["quotes", "breathing"]
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
-        }
-    }
-  */
+
 
     func get() {
-        
-//    print("hello world")
-    // Complete this function
     db.collection("users")
       .addSnapshotListener { querySnapshot, error in
         if let error = error {
             print("Error getting documents: \(error)")
           return
         }
-
-//          for document in querySnapshot!.documents {
-//                      print("\(document.documentID) => \(document.data())")
-//          }
           
           self.users = querySnapshot?.documents.compactMap { document in
             try? document.data(as: User.self)
@@ -83,25 +48,55 @@ class UserRepository: ObservableObject {
           self.date = format.string(from: mytime)
       }
 
-    //debugging
-//    for usr in self.users {
-//       print(String(usr.UUID)) // check to see if data was loaded
-//     }
-    
-//    print("hello world 2")
-
 
     }
+    
+    func getUserProfileInfo(){
+        db.collection("user-profiles")
+          .addSnapshotListener { querySnapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+              return
+            }
+              
+              self.users = querySnapshot?.documents.compactMap { document in
+                try? document.data(as: User.self)
+              } ?? []
+  
+          }
+    }
+    
     func updateIntentionData(intentions: [String]) {
         var ref: DocumentReference? = nil
         let mytime = Date()
         let format = DateFormatter()
         format.dateFormat = "dd-MM-yyyy"
-        ref = db.collection("users").addDocument(data: ["id": UUID().uuidString,
-                                                        "deviceID": UIDevice.current.identifierForVendor?.uuidString,
-                                                        "date":format.string(from: mytime),
-                                                  "features": ["weather"],
-                                                   "intentions": intentions]
+        let id = UUID().uuidString
+        let deviceID = UIDevice.current.identifierForVendor?.uuidString
+        let date = format.string(from: mytime)
+        let quote = viewModel.quote.text
+        let affirmations = [viewModel.affirmations[0].text,
+                           viewModel.affirmations[1].text,
+                           viewModel.affirmations[2].text,
+                           viewModel.affirmations[3].text,
+                           viewModel.affirmations[4].text]
+        let suggestion = viewModel.suggestion.text
+        let currUser = User(id: id,
+                            deviceID:deviceID,
+                            date:date,
+                            intentions:intentions,
+                            quote:quote,
+                            affirmations:affirmations,
+                            suggestion:suggestion)
+        self.users.append(currUser)
+        ref = db.collection("users").addDocument(data: ["id": id,
+                                                        "deviceID": deviceID,
+                                                        "date": date,
+                                                        "intentions": intentions,
+                                                        "quote": quote,
+                                                        "affirmations": affirmations,
+                                                        "suggestion": suggestion
+                                                        ]
         ) { err in
             if let err = err {
                 print("Error adding document: \(err)")
@@ -109,31 +104,12 @@ class UserRepository: ObservableObject {
                 print("Document added with ID: \(ref!.documentID)")
             }
         }
+        
+       
+        print(self.users)
     }
     
-//    func fetchData() {
-//        db.collection("users").addSnapshotListener(){ (QuerySnapshot, error) in
-//            guard let documents = QuerySnapshot?.documents else {
-//                print("No documents")
-//                return
-//            }
-//            self.users = documents.map{(QueryDocumentSnapshot)->User in
-//                let data = QueryDocumentSnapshot.data()
-//                let id = data["id"] as? String ?? ""
-//                let features = data["features"] as? [String] ?? []
-//                let intentions = data["intentions"] as? [String] ?? []
-//
-//                let user = User(id: id, features: features, intentions: intentions)
-//                print("this is user from userrepo.")
-//                print(user.id)
-//                print(user.intentions)
-//                return users.append(user)
-//
-//            }
-//            print("this is the users summary from fetchdata")
-//            print(self.users)
-//        }
-//    }
+
     
     
 }

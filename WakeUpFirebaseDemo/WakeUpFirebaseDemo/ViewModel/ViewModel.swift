@@ -31,6 +31,10 @@ class ViewModel: ObservableObject {
   //SUGGESTION
   let sugDeck = SuggestionDeck()
   @Published var suggestion: Suggestion
+    
+
+  //  let userToday: User
+    
 
 //    
 //  var userProfiles = UserRepository()
@@ -53,8 +57,8 @@ class ViewModel: ObservableObject {
 
       DateFormatter().dateFormat = "dd-MM-yyyy"
       self.date = format.string(from: mytime)
-      print("this is self date")
       print(self.date)
+       
       
     
 //    self.userRepository = userProfiles.updateIntentionData(intentions: ["test the function","asdfa"] )
@@ -79,18 +83,6 @@ class ViewModel: ObservableObject {
 //  }
 
 
-
-
-    func animateCircle(){
-        for _ in 0...2{
-            scale += 1
-        }
-        if (scale==3){
-            for _ in 0...2{
-                scale -= 1
-            }
-        }
-    }
   
 
 
