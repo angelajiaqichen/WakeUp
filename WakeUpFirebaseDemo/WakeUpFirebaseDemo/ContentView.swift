@@ -64,6 +64,8 @@ struct ContentView: View {
                             }
                             
                             if productivitySelected {
+                                CleanTasksView()
+                                CleanEventsView()
                                 IntentionsView()
                                 SummaryView()
                             }
@@ -86,6 +88,8 @@ struct ContentView: View {
                             AffirmationsView()
                             SuggestionView()
                             QuoteView()
+                            CleanTasksView()
+                            CleanEventsView()
                             IntentionsView()
                             SummaryView()
                             ConquerTheDayView()
