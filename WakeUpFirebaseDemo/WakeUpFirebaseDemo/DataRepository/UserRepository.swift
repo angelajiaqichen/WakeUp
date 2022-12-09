@@ -27,7 +27,7 @@ class UserRepository: ObservableObject {
 
   init() {
       self.get()
-      self.getUserProfileInfo()     
+      //self.getUserProfileInfo()     
   }
 
 
@@ -50,7 +50,8 @@ class UserRepository: ObservableObject {
 
 
     }
-    
+   
+    /*
     func getUserProfileInfo(){
         db.collection("user-profiles")
           .addSnapshotListener { querySnapshot, error in
@@ -65,6 +66,7 @@ class UserRepository: ObservableObject {
   
           }
     }
+     */
     
     func updateIntentionData(intentions: [String]) {
         var ref: DocumentReference? = nil
