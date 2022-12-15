@@ -69,7 +69,9 @@ struct AffirmationsView: View {
                                 Text("\(viewModel.affirmations[4].text)").bold().multilineTextAlignment(.center)
                                     .foregroundColor(.white)
                             )
+                        
                             .frame(width: 350, height: 75)
+            Spacer()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(LinearGradient(colors: colors,
                                         startPoint: .top,

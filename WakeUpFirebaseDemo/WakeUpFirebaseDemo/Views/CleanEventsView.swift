@@ -12,10 +12,9 @@ struct CleanEventsView: View {
   @ObservedObject var viewModel = ViewModel()
   private var eventStore: EventStore { EventStore.shared }
 
-  let colors = [
-      Color(red: 0.69411, green: 0.70196, blue: 0.9333),
-      Color(red: 0.99216, green: 0.9725, blue: 0.5333),
-      Color(red: 0.9333, green: 0.9333, blue: 0.6980)]
+    let colors = [
+        Color(red: 1.0, green: 0.8549, blue: 0.4784),
+        Color(red: 1.0, green: 0.717647, blue: 0.7333)]
   let rectColors = [
       Color(red: 0.78431, green: 0.63529, blue: 0.78431),
       Color(red: 0.64313, green: 0.65490, blue: 1.0)]
@@ -24,10 +23,10 @@ struct CleanEventsView: View {
       VStack{
           Spacer()
           Text("Your Day Ahead").font(.largeTitle)
-              //.foregroundColor(.white)
+              .foregroundColor(.white)
           Spacer()
           
-          Text("You have\n\(String(viewModel.events.count)) events today").font(.largeTitle).multilineTextAlignment(.center)
+          Text("You have\n\(String(viewModel.events.count)) events today").foregroundColor(.white).font(.largeTitle).multilineTextAlignment(.center)
           Spacer()
         
           // display each event's title
@@ -48,7 +47,8 @@ struct CleanEventsView: View {
             Text("Back")
           }
         
-      }.onAppear(){
+      }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+          .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 350)).onAppear(){
         Task {
           await prepareEventStore()
         }

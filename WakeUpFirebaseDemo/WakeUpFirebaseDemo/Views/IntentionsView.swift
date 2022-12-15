@@ -25,7 +25,7 @@ struct IntentionsView: View {
     var body: some View {
         VStack {
           Spacer()
-          Text("Intentions")
+          Text("What are your productive intentions for the day?")
                 .foregroundColor(.white)
                 .font(.custom(
                         "Avenir",
@@ -54,36 +54,6 @@ struct IntentionsView: View {
                 userRepository.updateIntentionData(intentions: [intention1,intention2,intention3] )
 //                userRepository.reviewIntentions()
             }
-//          Button("Add the second Intention") {
-//                          secondIntention.toggle()
-//                      }
-//
-//                      if secondIntention {
-//                        TextField("Please type your second intention of the day", text: $intention2)
-//                          .foregroundColor(.white)
-//                          .font(.custom(
-//                                  "Avenir",
-//                                  fixedSize: 20))
-//                          .multilineTextAlignment(.center)
-//                      }
-//          Button("Add the third Intention") {
-//                          thirdIntention.toggle()
-//                      }
-//
-//                      if thirdIntention {
-//                        TextField("Please type your third intention of the day", text: $intention3)
-//                          .foregroundColor(.white)
-//                          .font(.custom(
-//                                  "Avenir",
-//                                  fixedSize: 20))
-//                          .multilineTextAlignment(.center)
-//                      }
-//        Button("Submit")
-//        SecureField("Password", text: $password)
-//                    .onSubmit {
-//                        print("Authenticating…")
-//                    }
-//          userRepository.updateIntentionData(intentions: ["你好","hihihihih"] )
           Spacer()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(LinearGradient(colors: colors,

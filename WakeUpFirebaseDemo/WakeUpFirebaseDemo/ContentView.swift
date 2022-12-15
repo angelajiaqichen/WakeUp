@@ -11,9 +11,13 @@ struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
 
     @ObservedObject var userRepository = UserRepository()
+    
 
+    @State private var showExistsAlert = false
+    @State private var showMissingAlert = false
     @State private var isMinimized = true
     @State private var animationDuration = 0.5
+    //@State private var currUser: UserProfile
 
 
     private let colors = [
@@ -64,12 +68,12 @@ struct ContentView: View {
                                 }
                                 
                                 if productivitySelected {
+                                    IntentionsView()
                                     CleanTasksView()
                                     CleanEventsView()
-                                    IntentionsView()
                                     SummaryView()
                                 }
-                                //ConquerTheDayView()
+                                ConquerTheDayView()
                             
                             
                             
@@ -77,24 +81,40 @@ struct ContentView: View {
                             .ignoresSafeArea()
                         , tag: "signup", selection: $signup_login_selection){EmptyView()}
                         
+                       //logged in users
                         NavigationLink(destination:
                             TabView {
-                    
                                 IntroView(
                                     suggestionSelected: $suggestionSelected, weatherSelected: $weatherSelected,
                                     quoteSelected: $quoteSelected,
                                     productivitySelected: $productivitySelected,
                                     breathingSelected: $breathingSelected,
                                     affirmationsSelected: $affirmationsSelected, editOrIntro: .constant("edit"))
+                            if weatherSelected{
                                 WeatherView()
+                            }
+                            if breathingSelected{
+                                
                                 DeepBreathView(animationDuration: $animationDuration, isMinimized: $isMinimized)
+                            }
+                            if affirmationsSelected{
                                 AffirmationsView()
+                            }
+                            
+                            if suggestionSelected{
                                 SuggestionView()
+                            }
+                            if quoteSelected{
                                 QuoteView()
+                            }
+                            
+                            if productivitySelected {
+                                IntentionsView()
                                 CleanTasksView()
                                 CleanEventsView()
-                                IntentionsView()
                                 SummaryView()
+                            }
+                            ConquerTheDayView()
                             
                             
                             
@@ -104,20 +124,51 @@ struct ContentView: View {
                         
                         
                         
-                        Button(action:{signup_login_selection = "signup"}){
+                        Button(action:{
+                            Task{
+                                var exists = await userRepository.isExistingUser()
+                                if(exists==true) {
+                                    showExistsAlert = true
+                                }
+                                else{
+                                    signup_login_selection = "signup"
+                                    showExistsAlert = false
+                                }
+                            }
+                            
+                        }
+                        ){
                             RoundedRectangle(cornerRadius: 25.0, style: .circular)
                                 .foregroundColor(colors[1])
                                 .overlay(
                                     Text("Sign Up").foregroundColor(.white).bold()).frame(width: 150, height: 50)
+                        }.alert("You already have an account registered with this device. Please log in", isPresented: $showExistsAlert) {
+                            Button("OK", role: .cancel) { }
                         }
                         
-                        Button(action:{signup_login_selection = "login"}){
+
+                        
+                        Button(action:{
+                            Task{
+                                var exists = await userRepository.isExistingUser()
+                                if(exists==false) {
+                                    showMissingAlert = true
+                                }
+                                else{
+                                    signup_login_selection = "login"
+                                    showMissingAlert = false
+                                }
+                            }
                             
+                        }){
                             RoundedRectangle(cornerRadius: 25.0, style: .circular)
                                 .foregroundColor(colors[1])
                                 .overlay(
                                     Text("Log In").foregroundColor(.white).bold()).frame(width: 150, height: 50)
                         }
+                        .alert("We do not have an account registered with your device. Please sign up to proceed.", isPresented: $showMissingAlert) {
+                                    Button("OK", role: .cancel) { }
+                                }
                         Spacer()
                         
                     }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -130,6 +181,8 @@ struct ContentView: View {
             }
                 
     }
+
+    
 
 
 
