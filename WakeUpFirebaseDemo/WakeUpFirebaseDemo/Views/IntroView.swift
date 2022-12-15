@@ -10,6 +10,8 @@ import SwiftUI
 
 
 struct IntroView: View {
+    @State private var name: String = ""
+    @ObservedObject var userRepository = UserRepository()
     let colors = [
         Color(red: 1.0, green: 0.8549, blue: 0.4784),
         Color(red: 1.0, green: 0.717647, blue: 0.7333)]
@@ -40,9 +42,15 @@ struct IntroView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                 }
+                
                 else if (self.editOrIntro == "edit"){
-                    Text("**Welcome, User**").font(.system(size: 36))
-                        .foregroundColor(.white)
+                    ForEach(userRepository.userprofiles, id: \.id) { user in
+                        if user.deviceID == UIDevice.current.identifierForVendor?.uuidString{
+                            Text("Welcome\n\(user.name!)").font(.system(size: 36))
+                                .foregroundColor(.white)
+                        }
+                    }
+                    
                     Text("Edit your routine below")
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
@@ -226,6 +234,19 @@ struct IntroView: View {
                 }
                 
                 Spacer()
+                if (self.editOrIntro=="intro"){
+                    TextField("Enter your name to create your profile", text: $name)
+                        .foregroundColor(.white)
+                        .font(.custom(
+                            "Avenir",
+                            fixedSize: 20))
+                        .multilineTextAlignment(.center)
+                        .onSubmit{
+                            userRepository.createNewUserProfile(name: name, weather: weatherSelected, breathing: breathingSelected, productivity: productivitySelected, suggestion: suggestionSelected, quotes: quoteSelected, affirmations: affirmationsSelected)
+                        }
+                    Spacer()
+                }
+
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .background(RadialGradient(colors: colors, center: .center, startRadius: 0, endRadius: 350))
             

@@ -7,12 +7,19 @@
 
 import SwiftUI
 import FirebaseCore
-
+import AVFoundation
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+      
+      guard let musicURL = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return false }
+      if let audioPlayer = try? AVAudioPlayer(contentsOf: musicURL) {
+          audioPlayer.play()
+      } else {
+          print("Error creating audio player")
+      }
 
     return true
   }

@@ -20,6 +20,7 @@ struct DeepBreathView: View {
         Color(red: 0.9333, green: 0.69411, blue: 0.8667)]
     var body: some View {
         VStack{
+            Spacer()
             Text("Take 5 Deep Breaths to Start Your Day!")
                 .foregroundColor(.white)
                 .font(.custom(
