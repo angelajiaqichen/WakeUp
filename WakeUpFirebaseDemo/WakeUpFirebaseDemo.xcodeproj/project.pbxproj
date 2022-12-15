@@ -23,8 +23,6 @@
 		162A29BF2917162C0064BAC0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29BE2917162C0064BAC0 /* Suggestion.swift */; };
 		162A29C3291716AA0064BAC0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A29C2291716AA0064BAC0 /* Weather.swift */; };
 		16467E6A294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16467E69294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift */; };
-		16467E71294280FD0078C8E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16467E70294280FC0078C8E3 /* GoogleService-Info.plist */; };
-		16467E72294280FD0078C8E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16467E70294280FC0078C8E3 /* GoogleService-Info.plist */; };
 		165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165BE569293922DE00CDA7F1 /* TasksView.swift */; };
 		16D581B02935495900054EA1 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581AF2935495900054EA1 /* Reminders.swift */; };
 		16D581B62935503200054EA1 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D581B52935503200054EA1 /* Reminder+EKReminder.swift */; };
@@ -43,6 +41,11 @@
 		E30ADEBA290B38A8002EF995 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEB9290B38A8002EF995 /* User.swift */; };
 		E30ADEBE290B4211002EF995 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30ADEBD290B4211002EF995 /* UserRepository.swift */; };
 		E34DBAFA29354A7C00E75933 /* IntentionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34DBAF929354A7C00E75933 /* IntentionsView.swift */; };
+		E3772A73294AF06B0017B555 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3772A72294AF06B0017B555 /* AVFoundation.framework */; };
+		E3772A7A294AFDE70017B555 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3772A79294AFDE70017B555 /* UserProfile.swift */; };
+		E37BB1CC2943BA9F00F30F61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E37BB1CB2943BA9F00F30F61 /* GoogleService-Info.plist */; };
+		E37BB1CF2943C1FB00F30F61 /* CleanTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BB1CD2943C1FB00F30F61 /* CleanTasksView.swift */; };
+		E37BB1D02943C1FB00F30F61 /* CleanEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BB1CE2943C1FB00F30F61 /* CleanEventsView.swift */; };
 		E39D7CC0291828220074BB06 /* ConquerTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */; };
 		E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D7CC1291835C80074BB06 /* Intro.storyboard */; };
 		E3A93010291AE3EA006E548A /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9300F291AE3EA006E548A /* IntroView.swift */; };
@@ -78,7 +81,6 @@
 		162A29C2291716AA0064BAC0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		16467E67294277E80078C8E3 /* WakeUpFirebaseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeUpFirebaseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16467E69294277E80078C8E3 /* WakeUpFirebaseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpFirebaseDemoTests.swift; sourceTree = "<group>"; };
-		16467E70294280FC0078C8E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../PriceCheckFB_starter/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		165BE5682937DE7300CDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		165BE569293922DE00CDA7F1 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		16D581AF2935495900054EA1 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
@@ -95,6 +97,11 @@
 		E30ADEB9290B38A8002EF995 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E30ADEBD290B4211002EF995 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		E34DBAF929354A7C00E75933 /* IntentionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentionsView.swift; sourceTree = "<group>"; };
+		E3772A72294AF06B0017B555 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E3772A79294AFDE70017B555 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E37BB1CB2943BA9F00F30F61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E37BB1CD2943C1FB00F30F61 /* CleanTasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanTasksView.swift; sourceTree = "<group>"; };
+		E37BB1CE2943C1FB00F30F61 /* CleanEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanEventsView.swift; sourceTree = "<group>"; };
 		E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConquerTheDayView.swift; sourceTree = "<group>"; };
 		E39D7CC1291835C80074BB06 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		E3A9300F291AE3EA006E548A /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
@@ -117,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3772A73294AF06B0017B555 /* AVFoundation.framework in Frameworks */,
 				16099DB029186573008E01CC /* Alamofire in Frameworks */,
 				E30ADEB4290B36E9002EF995 /* FirebaseFirestore in Frameworks */,
 				E30ADEB6290B36E9002EF995 /* FirebaseFirestoreSwift in Frameworks */,
@@ -133,6 +141,8 @@
 				16099DB129186998008E01CC /* WeatherView.swift */,
 				E34DBAF929354A7C00E75933 /* IntentionsView.swift */,
 				E3BF3D94293EB22600FE9C8E /* SummaryView.swift */,
+				E37BB1CE2943C1FB00F30F61 /* CleanEventsView.swift */,
+				E37BB1CD2943C1FB00F30F61 /* CleanTasksView.swift */,
 				16099DB429186BE4008E01CC /* AffirmationsView.swift */,
 				16099DB629186C1B008E01CC /* QuoteView.swift */,
 				E39D7CBF291828220074BB06 /* ConquerTheDayView.swift */,
@@ -163,6 +173,7 @@
 		16DAC1952942874F0016B3FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3772A72294AF06B0017B555 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,8 +201,8 @@
 		E30ADEA3290B3596002EF995 /* WakeUpFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E37BB1CB2943BA9F00F30F61 /* GoogleService-Info.plist */,
 				165BE5682937DE7300CDA7F1 /* Info.plist */,
-				16467E70294280FC0078C8E3 /* GoogleService-Info.plist */,
 				16D715B9291992450021A8D8 /* ViewModel */,
 				16099DB3291869A2008E01CC /* Views */,
 				E30ADEBC290B41B1002EF995 /* DataRepository */,
@@ -232,6 +243,7 @@
 				16040A9B29416486003B49C0 /* EventStore.swift */,
 				16D581BD2935673000054EA1 /* EKEventStore+AsyncFetch.swift */,
 				16040A9F2941711E003B49C0 /* DateExtension.swift */,
+				E3772A79294AFDE70017B555 /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,7 +357,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16467E72294280FD0078C8E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30ADEAC290B3599002EF995 /* Preview Assets.xcassets in Resources */,
-				16467E71294280FD0078C8E3 /* GoogleService-Info.plist in Resources */,
+				E37BB1CC2943BA9F00F30F61 /* GoogleService-Info.plist in Resources */,
 				E30ADEA9290B3599002EF995 /* Assets.xcassets in Resources */,
 				E39D7CC2291835C80074BB06 /* Intro.storyboard in Resources */,
 			);
@@ -379,6 +390,7 @@
 				E3A93010291AE3EA006E548A /* IntroView.swift in Sources */,
 				16040A9A29415F6E003B49C0 /* Event+EKEvent.swift in Sources */,
 				162A29B92917158C0064BAC0 /* Intentions.swift in Sources */,
+				E37BB1D02943C1FB00F30F61 /* CleanEventsView.swift in Sources */,
 				16D581B02935495900054EA1 /* Reminders.swift in Sources */,
 				16099DB729186C1B008E01CC /* QuoteView.swift in Sources */,
 				E34DBAFA29354A7C00E75933 /* IntentionsView.swift in Sources */,
@@ -390,10 +402,12 @@
 				E3BF3D95293EB22600FE9C8E /* SummaryView.swift in Sources */,
 				16D715BB2919926C0021A8D8 /* ViewModel.swift in Sources */,
 				16099DB529186BE4008E01CC /* AffirmationsView.swift in Sources */,
+				E3772A7A294AFDE70017B555 /* UserProfile.swift in Sources */,
 				E3F10414291D8FAA007558F4 /* SplashScreen.swift in Sources */,
 				16099DB229186998008E01CC /* WeatherView.swift in Sources */,
 				16040AA02941711E003B49C0 /* DateExtension.swift in Sources */,
 				16E90441291D8AD400E91CB4 /* SuggestionView.swift in Sources */,
+				E37BB1CF2943C1FB00F30F61 /* CleanTasksView.swift in Sources */,
 				165BE56A293922DE00CDA7F1 /* TasksView.swift in Sources */,
 				162A29BB291715DC0064BAC0 /* Quote.swift in Sources */,
 				16D581B82935540900054EA1 /* ReminderStore.swift in Sources */,
