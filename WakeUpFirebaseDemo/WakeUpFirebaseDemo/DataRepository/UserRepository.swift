@@ -28,7 +28,7 @@ class UserRepository: ObservableObject {
 
   init() {
       self.get()
-      //self.getUserProfileInfo()     
+      self.getUserProfileInfo()
   }
 
 
@@ -47,9 +47,26 @@ class UserRepository: ObservableObject {
           let format = DateFormatter()
           format.dateFormat = "dd-MM-yyyy"
           self.date = format.string(from: mytime)
+          
       }
+        
 
+    }
+    
+    func getUserProfileInfo(){
+        db.collection("user-profiles")
+          .addSnapshotListener { querySnapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+              return
+            }
+              
+              self.userprofiles = querySnapshot?.documents.compactMap { document in
+                try? document.data(as: UserProfile.self)
+              } ?? []
 
+              
+          }
     }
    
   
