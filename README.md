@@ -21,7 +21,7 @@ For sprint 6, we did not reach 100% test coverage for the following reasons:
 ### A-Level
 - Tasks, Events screens: User could see a brief list of their daily tasks and events
 - Intentions + Setting up the daily intentions: Users can set up 1-3 daily intentions and view a summary of them at the end of the flow
-- User onboarding (selecting features): New users can choose to enable the following features: weather, quote, to-do list, deep breathing, and affirmations
+- User onboarding (selecting features): New users can choose to enable the following features: weather, quote, productivity, deep breathing, and affirmations
 - User onboarding (description of features): Users should be able to see what a feature does before they decide if they want to select the feature or not
 
 
